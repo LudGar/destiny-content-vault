@@ -1,0 +1,3619 @@
+{
+  "destinations": [
+    {
+      "id": "planet_europa",
+      "game": "Destiny 2",
+      "name": "Europa",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 12,
+        "y": 53
+      },
+      "activities": [
+        {
+          "id": "act_mi34giqv",
+          "name": "Bunker E15",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Inquisitor Hydra"
+          ],
+          "description": "",
+          "position": {
+            "x": 36,
+            "y": 27
+          }
+        },
+        {
+          "id": "act_mi34h2d5",
+          "name": "Concealed Void",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Teliks",
+            "House Salvation"
+          ],
+          "description": "",
+          "position": {
+            "x": 49,
+            "y": 44
+          }
+        },
+        {
+          "id": "act_mi34ht5e",
+          "name": "Perdition",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Alkestis",
+            "Sacrificial Mind"
+          ],
+          "description": "",
+          "position": {
+            "x": 34,
+            "y": 44
+          }
+        },
+        {
+          "id": "act_mi35s3h4",
+          "name": "Hailstone",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Basilius",
+            "the Golem"
+          ],
+          "description": "",
+          "position": {
+            "x": 58,
+            "y": 54
+          }
+        },
+        {
+          "id": "act_mi364hxv",
+          "name": "Heist: Europa",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Shrieker",
+            "Warwatcher",
+            "Eye of Xivu Arath"
+          ],
+          "description": "",
+          "position": {
+            "x": 60,
+            "y": 54
+          }
+        },
+        {
+          "id": "act_mi37idz9",
+          "name": "Vesper's Host",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 57,
+            "y": 26
+          }
+        },
+        {
+          "id": "act_mi37r59a",
+          "name": "Deep Stone Crypt",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 23
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/013BC280.png"
+    },
+    {
+      "id": "planet_nessus",
+      "game": "Destiny 2",
+      "name": "Nessus",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 70,
+        "y": 57
+      },
+      "activities": [
+        {
+          "id": "act_mi32sozx",
+          "name": "Exodus Siege",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "The Fallen prepare to attack Failsafe's mainframe aboard the Exodus Black.",
+          "position": {
+            "x": 57,
+            "y": 53
+          }
+        },
+        {
+          "id": "act_mi32t45f",
+          "name": "Hack the Planet",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "Ghost has a plan to interface with the Nessus core. But he'll need Failsafe's help.",
+          "position": {
+            "x": 50,
+            "y": 60
+          }
+        },
+        {
+          "id": "act_mi32t4g9",
+          "name": "Deep Conversation",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "Failsafe has a plan to retrieve Vex data. But she'll need Ghost's help.",
+          "position": {
+            "x": 44,
+            "y": 54
+          }
+        },
+        {
+          "id": "act_mi32t4le",
+          "name": "Unbreakable",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "Failsafe has caught wind of Vex tech that could result in unstoppable barriers.",
+          "position": {
+            "x": 44,
+            "y": 43
+          }
+        },
+        {
+          "id": "act_mi32tchn",
+          "name": "Invitation from the Emperor",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "Cayde's worried about a mysterious message drawing the Red Legion to a remote corner of Nessus.",
+          "position": {
+            "x": 50,
+            "y": 38
+          }
+        },
+        {
+          "id": "act_mi32tdwk",
+          "name": "Lost Crew",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "Help Failsafe find two long-lost members of her crew.",
+          "position": {
+            "x": 56,
+            "y": 36
+          }
+        },
+        {
+          "id": "act_mi32tf26",
+          "name": "Release",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 90,
+          "tags": [],
+          "description": "The Vex appear to be capturing the Fallen, and Failsafe wants it stopped.",
+          "position": {
+            "x": 61,
+            "y": 37
+          }
+        },
+        {
+          "id": "act_mi32tg84",
+          "name": "O' Captain",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "- N/A -",
+          "position": {
+            "x": 63,
+            "y": 47
+          }
+        },
+        {
+          "id": "act_mi33wzkl",
+          "name": "The Orrery",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Minotaur",
+            "Thyrdron"
+          ],
+          "description": "",
+          "position": {
+            "x": 61,
+            "y": 19
+          }
+        },
+        {
+          "id": "act_mi33xj38",
+          "name": "The Rift",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Talas",
+            "Dusk Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 75,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi33y4a3",
+          "name": "The Carrion Pit",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Servitor",
+            "Nariks Reborn"
+          ],
+          "description": "",
+          "position": {
+            "x": 69,
+            "y": 77
+          }
+        },
+        {
+          "id": "act_mi33yqck",
+          "name": "The Conflux",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Colossus",
+            "Primus Cal'aug"
+          ],
+          "description": "",
+          "position": {
+            "x": 32,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi33zlju",
+          "name": "Ancient's Haunt",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Hydra",
+            "Pakrion"
+          ],
+          "description": "",
+          "position": {
+            "x": 38,
+            "y": 29
+          }
+        },
+        {
+          "id": "act_mi355opg",
+          "name": "Izanami Forge",
+          "category": "Season of the Forge",
+          "modeType": "Lost Forge",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Aegion",
+            "Deductive Mind",
+            "Sublimating Mind",
+            "Forge Warden",
+            "Izanami's Burden"
+          ],
+          "description": "",
+          "position": {
+            "x": 77,
+            "y": 44
+          }
+        },
+        {
+          "id": "act_mi35hz8s",
+          "name": "Gofannon Forge",
+          "category": "Season of the Forge",
+          "modeType": "Lost Forge",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Serekis-9",
+            "Kell's Scourge",
+            "Zevious-3",
+            "Forge Warden",
+            "Le Monarque"
+          ],
+          "description": "",
+          "position": {
+            "x": 60,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi35rb28",
+          "name": "Behemoth",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Commander Dracus"
+          ],
+          "description": "",
+          "position": {
+            "x": 94,
+            "y": 38
+          }
+        },
+        {
+          "id": "act_mi35t0bt",
+          "name": "Oracle",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Ixel",
+            "the Far-Reaching"
+          ],
+          "description": "",
+          "position": {
+            "x": 92,
+            "y": 53
+          }
+        },
+        {
+          "id": "act_mi36alwn",
+          "name": "Delve",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Hydra",
+            "Hypolydron",
+            "Captive Mind"
+          ],
+          "description": "",
+          "position": {
+            "x": 82,
+            "y": 80
+          }
+        },
+        {
+          "id": "act_mi36bfjj",
+          "name": "Conduit",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Minotaur",
+            "Kamarian",
+            "Radial Overseer"
+          ],
+          "description": "",
+          "position": {
+            "x": 89,
+            "y": 66
+          }
+        },
+        {
+          "id": "act_mi36c441",
+          "name": "Core",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Cyclops",
+            "Antioptes",
+            "Hypogean Sentinel"
+          ],
+          "description": "",
+          "position": {
+            "x": 74,
+            "y": 88
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/B735C280.png"
+    },
+    {
+      "id": "earth_oldrussia",
+      "game": "Destiny 2",
+      "name": "Cosmodrome",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 50,
+        "y": 87
+      },
+      "activities": [
+        {
+          "id": "act_mi34dxop",
+          "name": "Exodus Garden 2A",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Deksis-5",
+            "Taskmaster"
+          ],
+          "description": "",
+          "position": {
+            "x": 45,
+            "y": 79
+          }
+        },
+        {
+          "id": "act_mi34er4q",
+          "name": "Veles Labyrinth",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Ak-Baral",
+            "Rival of Navôta"
+          ],
+          "description": "",
+          "position": {
+            "x": 75,
+            "y": 49
+          }
+        },
+        {
+          "id": "act_mi35pt3l",
+          "name": "Foothold",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Val Ma'rag"
+          ],
+          "description": "",
+          "position": {
+            "x": 61,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi361jm4",
+          "name": "PsiOps: Cosmodrome",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Lightbearer",
+            "Uul'nath",
+            "Lightcleanser"
+          ],
+          "description": "",
+          "position": {
+            "x": 65,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi3686j4",
+          "name": "Defiant: Cosmodrome",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Zatocc",
+            "Devoted to the Witness"
+          ],
+          "description": "",
+          "position": {
+            "x": 69,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi37fieo",
+          "name": "Grasp of Avarice",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 35,
+            "y": 16
+          }
+        },
+        {
+          "id": "act_mi37n0j8",
+          "name": "Wrath of the Machine",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 48,
+            "y": 58
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/B539C280.png"
+    },
+    {
+      "id": "earth_newtower",
+      "game": "Destiny 2",
+      "name": "Tower",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 39,
+        "y": 72
+      },
+      "activities": [],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/AD3AC280.png"
+    },
+    {
+      "id": "earth_orbit_traveller",
+      "game": "Destiny 2",
+      "name": "The Pale Heart",
+      "type": "location",
+      "icon": "assets/icons/3ADCC080.png",
+      "position": {
+        "x": 39,
+        "y": 50
+      },
+      "activities": [
+        {
+          "id": "act_mi32ilu9",
+          "name": "The Hollow, Part I",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32j6q1",
+          "name": "The Hollow, Part II",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32jhqp",
+          "name": "Home, Part I",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32jpoi",
+          "name": "Home, Part II",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32jwgn",
+          "name": "Queens, Part I",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32k4ot",
+          "name": "Queens, Part II",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi34wr97",
+          "name": "The Broken Deep",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [
+            "Dread",
+            "Rhalis",
+            "Subjugator of the Light"
+          ],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi34xuar",
+          "name": "The Forgotten Deep",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Lightbearer",
+            "El Räkosh",
+            "Banisher of Memory"
+          ],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi34zkg6",
+          "name": "The Blooming Deep",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [
+            "Taken",
+            "Knight",
+            "Azshrünah ur-Nokru",
+            "the Sacrificed"
+          ],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37tpz7",
+          "name": "Salvation's Edge",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/3ADCC080.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 0,
+            "y": 100
+          }
+        }
+      ],
+      "iconOverlay1": "assets/icons/47DCC080.png",
+      "iconOverlay2": "assets/icons/44DCC080.png",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "planet_neptune",
+      "game": "Destiny 2",
+      "name": "Neptune",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 7,
+        "y": 33
+      },
+      "activities": [
+        {
+          "id": "act_mi34u8he",
+          "name": "Gilded Precept",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Valus Tharum",
+            "Gladiatorial Overseer"
+          ],
+          "description": "",
+          "position": {
+            "x": 64,
+            "y": 45
+          }
+        },
+        {
+          "id": "act_mi34v5iv",
+          "name": "Hydroponics Delta",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Valus Dravusk",
+            "Shadow Legion"
+          ],
+          "description": "",
+          "position": {
+            "x": 43,
+            "y": 52
+          }
+        },
+        {
+          "id": "act_mi34vuiv",
+          "name": "Thrilladrome",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Agon",
+            "Strategic Hydra"
+          ],
+          "description": "",
+          "position": {
+            "x": 59,
+            "y": 62
+          }
+        },
+        {
+          "id": "act_mi37t8ta",
+          "name": "Root of Nightmare",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 16,
+            "y": 32
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/4E35C280.png",
+      "mapImage": "assets/maps/4E35C280.png"
+    },
+    {
+      "id": "plane_shavathun",
+      "game": "Destiny 2",
+      "name": "Savathûn's Throne World",
+      "type": "location",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 7,
+        "y": 75
+      },
+      "activities": [
+        {
+          "id": "act_mi333uno",
+          "name": "Pact",
+          "category": "Story",
+          "modeType": "Alter of Reflection",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 49,
+            "y": 58
+          }
+        },
+        {
+          "id": "act_mi336phh",
+          "name": "Insight",
+          "category": "Story",
+          "modeType": "Alter of Reflection",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi336s9i",
+          "name": "Choice",
+          "category": "Story",
+          "modeType": "Alter of Reflection",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 29
+          }
+        },
+        {
+          "id": "act_mi336uly",
+          "name": "Catalyst",
+          "category": "Story",
+          "modeType": "Alter of Reflection",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 35,
+            "y": 58
+          }
+        },
+        {
+          "id": "act_mi33b9rp",
+          "name": "Altars of Summoning",
+          "category": "Season of the Witch",
+          "modeType": "Activity",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 1760,
+          "tags": [],
+          "description": "Hidden within the Court of Savathûn are the Altars of Summoning, a hidden oubliette where Savathûn, the Witch Queen has imprisoned large amounts of powerful creatures for future use. Following her posthumous direction, her Ghost Immaru directs the Vanguard into the oubliette, so that they can slay the beings within as tribute for Eris Morn, God of Vengeance.",
+          "position": {
+            "x": 68,
+            "y": 25
+          }
+        },
+        {
+          "id": "act_mi34j3g1",
+          "name": "Extraction",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Hathrek",
+            "the Glasweard"
+          ],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 64
+          }
+        },
+        {
+          "id": "act_mi34jnd0",
+          "name": "Sepulcher",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Bar-Zel",
+            "Tutelary of Savathûn"
+          ],
+          "description": "",
+          "position": {
+            "x": 65,
+            "y": 58
+          }
+        },
+        {
+          "id": "act_mi34kevm",
+          "name": "Metamorphosis",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Dread",
+            "Tatsrekaa"
+          ],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 46
+          }
+        },
+        {
+          "id": "act_mi37iwm9",
+          "name": "Sundered Doctrine",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 43,
+            "y": 18
+          }
+        },
+        {
+          "id": "act_mi37rs52",
+          "name": "Vow of the Disciple",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 39,
+            "y": 23
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/EB38C280.png"
+    },
+    {
+      "id": "gamemode_strike",
+      "game": "Destiny 2",
+      "name": "Vanguard",
+      "type": "activity",
+      "icon": "assets/icons/1336C280.png",
+      "position": {
+        "x": 30,
+        "y": 6
+      },
+      "activities": [],
+      "iconOverlay1": "assets/icons/1636C280.png",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "gamemode_gambit",
+      "game": "Destiny 2",
+      "name": "Gambit",
+      "type": "planet",
+      "icon": "assets/icons/1936C280.png",
+      "position": {
+        "x": 36,
+        "y": 6
+      },
+      "activities": [],
+      "iconOverlay1": "assets/icons/1D36C280.png",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "gamemode_crucible",
+      "game": "Destiny 2",
+      "name": "Crucible",
+      "type": "planet",
+      "icon": "assets/icons/1F36C280.png",
+      "position": {
+        "x": 44,
+        "y": 6
+      },
+      "activities": [
+        {
+          "id": "act_mi36i21d",
+          "name": "Rumble",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36i6ip",
+          "name": "Elimination",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36if88",
+          "name": "Survival",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ikfj",
+          "name": "Rift",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ink2",
+          "name": "Crimson Days",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ivi7",
+          "name": "Trials of Osiris",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36j120",
+          "name": "Trials of the Nine",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ja87",
+          "name": "Custom Matches",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36jimh",
+          "name": "Iron Banner",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36jmlq",
+          "name": "Clash",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36k0uh",
+          "name": "Control",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36k4wd",
+          "name": "Skirmish",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36kaor",
+          "name": "Supremacy",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36kgua",
+          "name": "Double Supremacy",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ksru",
+          "name": "Inferno",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36kynr",
+          "name": "Mayhem Clash",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36l6c7",
+          "name": "Mayhem Rumble",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36lhly",
+          "name": "Salvage",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36lmv6",
+          "name": "Zone Control",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36lz4x",
+          "name": "Crucible Labs",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36m4gq",
+          "name": "Showdown",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36m9o5",
+          "name": "Team Scorched",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36mhyc",
+          "name": "Momentum Control",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36moa7",
+          "name": "Mayhem",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36n17v",
+          "name": "Relic",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36ndo0",
+          "name": "Breakthrough",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi36nk1y",
+          "name": "Countdown",
+          "category": "Story",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/1F36C280.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ],
+      "iconOverlay1": "assets/icons/2336C280.png",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "gamemode_legends",
+      "game": "Destiny 2",
+      "name": "Legends",
+      "type": "activity",
+      "icon": "assets/icons/2536C280.png",
+      "position": {
+        "x": 52,
+        "y": 6
+      },
+      "activities": [],
+      "iconOverlay1": "assets/icons/2736C280.png",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "location_eternity",
+      "game": "Destiny 2",
+      "name": "Eternity",
+      "type": "location",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 63,
+        "y": 19
+      },
+      "activities": [
+        {
+          "id": "act_mi37euo7",
+          "name": "Prophecy",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "location_dreamingcity",
+      "game": "Destiny 2",
+      "name": "The Dreaming City",
+      "type": "Location",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 63,
+        "y": 36
+      },
+      "activities": [
+        {
+          "id": "act_mi33cilh",
+          "name": "Cimerrian Garrison",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 60,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi33dltk",
+          "name": "Ouroborea",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 69,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi33dn1m",
+          "name": "Forfeit Shrine",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 64,
+            "y": 35
+          }
+        },
+        {
+          "id": "act_mi33dobt",
+          "name": "Shattered Ruins",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 53,
+            "y": 74
+          }
+        },
+        {
+          "id": "act_mi33ds4e",
+          "name": "Keep of Honed Edges",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 40,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi33dslq",
+          "name": "Agonarch Abyss",
+          "category": "Ascendant Challenge",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 25,
+            "y": 43
+          }
+        },
+        {
+          "id": "act_mi33fgqt",
+          "name": "Astral Alignment",
+          "category": "Season of the Lost",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 1300,
+          "tags": [],
+          "description": "Reawaken the Ley Lines around the Dreaming City and push back the armies of Xivu Arath.",
+          "position": {
+            "x": 31,
+            "y": 29
+          }
+        },
+        {
+          "id": "act_mi348wd6",
+          "name": "Bay of Drowned Wishes",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Yirksii",
+            "Scorn",
+            "Subversive Chieftain"
+          ],
+          "description": "",
+          "position": {
+            "x": 60,
+            "y": 42
+          }
+        },
+        {
+          "id": "act_mi34a5bf",
+          "name": "Aphelion's Rest",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Taken",
+            "Inkasi",
+            "Disciple of Quria"
+          ],
+          "description": "",
+          "position": {
+            "x": 69,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi36dus1",
+          "name": "Blind Well",
+          "category": "Activity",
+          "modeType": "Public Event",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi36ptbg",
+          "name": "The Shattered Throne",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 44,
+            "y": 22
+          }
+        },
+        {
+          "id": "act_mi37p7cm",
+          "name": "Last Wish",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 550,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 40,
+            "y": 25
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/6535C280.png"
+    },
+    {
+      "id": "gamemode_onslaught",
+      "game": "Destiny 2",
+      "name": "Into The Light",
+      "type": "activity",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 44,
+        "y": 19
+      },
+      "activities": [],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/E434C280.png"
+    },
+    {
+      "id": "gamemode_bossrush",
+      "game": "Destiny 2",
+      "name": "Pantheon",
+      "type": "Activity",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 34,
+        "y": 19
+      },
+      "activities": [
+        {
+          "id": "act_mi37urm3",
+          "name": "Atraks Sovereign",
+          "category": "Endgame",
+          "modeType": "Pantheon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": -5,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37vsdm",
+          "name": "Oryx Exalted",
+          "category": "Endgame",
+          "modeType": "Pantheon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": -10,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37wjoy",
+          "name": "Rhulk Indomitable",
+          "category": "Endgame",
+          "modeType": "Pantheon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": -15,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37wx9w",
+          "name": "Nezarec Sublime",
+          "category": "Endgame",
+          "modeType": "Pantheon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": -20,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "planet_luna",
+      "game": "Destiny 2",
+      "name": "Moon",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 60,
+        "y": 72
+      },
+      "activities": [
+        {
+          "id": "act_mi29z4nq",
+          "name": "The Scarlet Keep",
+          "category": "Strike",
+          "modeType": "Strike",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 100,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 46,
+            "y": 73
+          }
+        },
+        {
+          "id": "act_mi2dga6m",
+          "name": "Pit of Heresy",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 100,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 45,
+            "y": 52
+          }
+        },
+        {
+          "id": "act_mi337j3l",
+          "name": "Altars of Sorrow",
+          "category": "Patrol",
+          "modeType": "Public Event",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "Prevent the Hive from gaining Darkness\nEssence through the sacrifice of Nightmares",
+          "position": {
+            "x": 52,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi34azut",
+          "name": "K1 Logistics",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Nightmare of Kelnix Reborn"
+          ],
+          "description": "",
+          "position": {
+            "x": 40,
+            "y": 78
+          }
+        },
+        {
+          "id": "act_mi34blwn",
+          "name": "K1 Communion",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Nightmare of Rizaahn",
+            "the Lost"
+          ],
+          "description": "",
+          "position": {
+            "x": 29,
+            "y": 75
+          }
+        },
+        {
+          "id": "act_mi34cjkm",
+          "name": "K1 Crew Quarters",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Nightmare of Reyiks",
+            "Actuator"
+          ],
+          "description": "",
+          "position": {
+            "x": 19,
+            "y": 76
+          }
+        },
+        {
+          "id": "act_mi34d82w",
+          "name": "K1 Revelation",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Nightmare of Arguth",
+            "the Tormented"
+          ],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 65
+          }
+        },
+        {
+          "id": "act_mi362sgo",
+          "name": "PsiOps: Moon",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Lightbearer",
+            "Korosek",
+            "Thronebringer"
+          ],
+          "description": "",
+          "position": {
+            "x": 37,
+            "y": 57
+          }
+        },
+        {
+          "id": "act_mi363k6a",
+          "name": "Heist: Moon",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Once-Phyris",
+            "Scorn",
+            "the Exhumed Tether"
+          ],
+          "description": "",
+          "position": {
+            "x": 34,
+            "y": 57
+          }
+        },
+        {
+          "id": "act_mi37l5t1",
+          "name": "Crota's End",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 33,
+            "y": 70
+          }
+        },
+        {
+          "id": "act_mi37qpbw",
+          "name": "Garden of Salvation",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 63,
+            "y": 65
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/E93AC280.png",
+      "mapImage": "assets/maps/E93AC280.png"
+    },
+    {
+      "id": "earth_edz",
+      "game": "Destiny 2",
+      "name": "European Dead Zone",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 29,
+        "y": 86
+      },
+      "activities": [
+        {
+          "id": "act_mi32koes",
+          "name": "A Frame Job",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 20,
+          "tags": [],
+          "description": "Travel deep into enemy territory, ambush the Red Legion, and trick them into retaliating against the Fallen.",
+          "position": {
+            "x": 65,
+            "y": 34
+          }
+        },
+        {
+          "id": "act_mi32l2lz",
+          "name": "A New Frontier",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 30,
+          "tags": [],
+          "description": "Explore the European Dead Zone as Devrim provides support from the church.",
+          "position": {
+            "x": 74,
+            "y": 41
+          }
+        },
+        {
+          "id": "act_mi32lm50",
+          "name": "Calling Them Home",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 20,
+          "tags": [],
+          "description": "Hawthorne is broadcasting a message from the Farm to guide refugees. Help her amplify it to reach the entire region.",
+          "position": {
+            "x": 80,
+            "y": 42
+          }
+        },
+        {
+          "id": "act_mi32m3ul",
+          "name": "Supply and Demand",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 170,
+          "tags": [],
+          "description": "An old friend is looking for Red legion supplies to... reappropriate. Scour Fallen territory for anything to scavenge.",
+          "position": {
+            "x": 88,
+            "y": 46
+          }
+        },
+        {
+          "id": "act_mi32miaz",
+          "name": "Poor Reception",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 20,
+          "tags": [],
+          "description": "The Fallen are trying to block all communications in the EDZ. Find the source of the interference and shut it down.",
+          "position": {
+            "x": 87,
+            "y": 62
+          }
+        },
+        {
+          "id": "act_mi32muu8",
+          "name": "Dark Alliance",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "Red Legion Psions are meddling with forces best left alone. Investigate their connection to dark forces in the region.",
+          "position": {
+            "x": 87,
+            "y": 53
+          }
+        },
+        {
+          "id": "act_mi32na90",
+          "name": "Getting Your Hands Dirty",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "Seize upon the Taken invasion of the EDZ, direct their assault against the Red Legion, and end it before it gets out of control.",
+          "position": {
+            "x": 92,
+            "y": 53
+          }
+        },
+        {
+          "id": "act_mi32nnlx",
+          "name": "Reversing the Polarity",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "The Cabal tend to use a single technology to power everything in their arsenal. Take advantage of that design flaw to send them a message.",
+          "position": {
+            "x": 80,
+            "y": 67
+          }
+        },
+        {
+          "id": "act_mi32o5uy",
+          "name": "Stop and Go",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "Power generators in the Red Legion base are open to attack - but only for a short time. Speed into the subterranean complex and shut them down.",
+          "position": {
+            "x": 81,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi32ot4i",
+          "name": "Anti-Anti-Air",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "Infiltrate the Red legion base and disable their network of flak turrets.",
+          "position": {
+            "x": 79,
+            "y": 54
+          }
+        },
+        {
+          "id": "act_mi32p87f",
+          "name": "Unsafe At Any Speed",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 160,
+          "tags": [],
+          "description": "A nasty Fallen Pike gang is wreaking havoc in the area. Capture enemy vehicles and use them to even the odds.",
+          "position": {
+            "x": 77,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi32pnk2",
+          "name": "No Safe Distance",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 170,
+          "tags": [],
+          "description": "The Red Legion base is full of explosives even more dangerous than usual. Find and neutralize them before they can enter the field.",
+          "position": {
+            "x": 73,
+            "y": 57
+          }
+        },
+        {
+          "id": "act_mi32qg2r",
+          "name": "Red Legion, Black Oil",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 170,
+          "tags": [],
+          "description": "Destroy the dark liquid that the Cabal use to power their technology or contaminate it, for a subtler approach.",
+          "position": {
+            "x": 46,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi33hfwl",
+          "name": "Pathfinder's Crash",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Incendior",
+            "Zerz",
+            "the Unstoppable Weight"
+          ],
+          "description": "",
+          "position": {
+            "x": 49,
+            "y": 39
+          }
+        },
+        {
+          "id": "act_mi33isen",
+          "name": "The Pit",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Centurion King",
+            "the All-Seeing Force"
+          ],
+          "description": "",
+          "position": {
+            "x": 26,
+            "y": 59
+          }
+        },
+        {
+          "id": "act_mi33jqth",
+          "name": "Excavation Site XII",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Colossus",
+            "Dust-Choked Thrag"
+          ],
+          "description": "",
+          "position": {
+            "x": 30,
+            "y": 53
+          }
+        },
+        {
+          "id": "act_mi33kfds",
+          "name": "Scavenger's Den",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Graxus",
+            "Blind Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 43,
+            "y": 44
+          }
+        },
+        {
+          "id": "act_mi33l80i",
+          "name": "The Drain",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Drekthas",
+            "Metal Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 32,
+            "y": 72
+          }
+        },
+        {
+          "id": "act_mi33m0m0",
+          "name": "Whispered Falls",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Keldrik",
+            "Drained Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 55,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi33mgzp",
+          "name": "Flooded Chasm",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Phyzann",
+            "Drowned Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 25,
+            "y": 23
+          }
+        },
+        {
+          "id": "act_mi33n10i",
+          "name": "Cavern of Souls",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Taken",
+            "Knight",
+            "Varghul",
+            "Fragment of Oryx"
+          ],
+          "description": "",
+          "position": {
+            "x": 35,
+            "y": 40
+          }
+        },
+        {
+          "id": "act_mi33nn4m",
+          "name": "Hallowed Grove",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Taken",
+            "Captain",
+            "Vendraxis",
+            "Shadow of Oryx"
+          ],
+          "description": "",
+          "position": {
+            "x": 55,
+            "y": 45
+          }
+        },
+        {
+          "id": "act_mi33o883",
+          "name": "Shaft 13",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Calzar",
+            "Scarred Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 37,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi33orls",
+          "name": "Skydock IV",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Colossus",
+            "Devourer Darg"
+          ],
+          "description": "",
+          "position": {
+            "x": 56,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi33pt29",
+          "name": "The Quarry",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Centurion",
+            "Fortifier Yann"
+          ],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi33qbmr",
+          "name": "Atrium",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Skexis",
+            "Outcast Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 66,
+            "y": 62
+          }
+        },
+        {
+          "id": "act_mi33r8in",
+          "name": "Terminus East",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Kalsis",
+            "Sunless Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 40,
+            "y": 58
+          }
+        },
+        {
+          "id": "act_mi33row4",
+          "name": "Widow's Walk",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Mazan",
+            "Lost Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 63,
+            "y": 67
+          }
+        },
+        {
+          "id": "act_mi33tz6m",
+          "name": "The Weep",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Rannix",
+            "Drenched Captain"
+          ],
+          "description": "",
+          "position": {
+            "x": 35,
+            "y": 57
+          }
+        },
+        {
+          "id": "act_mi352v5m",
+          "name": "Volundr Forge",
+          "category": "Season of the Forge",
+          "modeType": "Lost Forge",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 610,
+          "tags": [
+            "Cabal",
+            "Ghalak the Colossus",
+            "Forge Warden",
+            "Jötunn"
+          ],
+          "description": "",
+          "position": {
+            "x": 36,
+            "y": 20
+          }
+        },
+        {
+          "id": "act_mi354e16",
+          "name": "Bergusia Forge",
+          "category": "Season of the Forge",
+          "modeType": "Lost Forge",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Siviks",
+            "Lost to None",
+            "The Black Recluse",
+            "Forge Warden",
+            "Thread Level"
+          ],
+          "description": "",
+          "position": {
+            "x": 45,
+            "y": 90
+          }
+        },
+        {
+          "id": "act_mi360a4y",
+          "name": "PsiOps: EDZ",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Lightbearer",
+            "Mor'ak",
+            "Lightstealer"
+          ],
+          "description": "",
+          "position": {
+            "x": 72,
+            "y": 47
+          }
+        },
+        {
+          "id": "act_mi366zey",
+          "name": "Defiant: EDZ",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Exomida",
+            "Taken of the Witness"
+          ],
+          "description": "",
+          "position": {
+            "x": 69,
+            "y": 47
+          }
+        },
+        {
+          "id": "act_mi369hvp",
+          "name": "Defiant: Orbital Prison",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Bracus Kravaum",
+            "Shadow Legion"
+          ],
+          "description": "",
+          "position": {
+            "x": 66,
+            "y": 47
+          }
+        },
+        {
+          "id": "act_mi37hogs",
+          "name": "Warlord's Ruin",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 79,
+            "y": 32
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/2639C280.png"
+    },
+    {
+      "id": "location_helm",
+      "game": "Destiny 2",
+      "name": "H.E.L.M.",
+      "type": "Location",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 39,
+        "y": 19
+      },
+      "activities": [
+        {
+          "id": "act_mi36fzsy",
+          "name": "Breach Executable",
+          "category": "Episode: Echoes",
+          "modeType": "Arena",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 8,
+            "y": 31
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/7835C280.png"
+    },
+    {
+      "id": "location_tangledshore",
+      "game": "Destiny 2",
+      "name": "Tangled Shore",
+      "type": "Location",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 60,
+        "y": 42
+      },
+      "activities": [
+        {
+          "id": "act_mi330zj8",
+          "name": "Target: The Rider",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 72,
+            "y": 40
+          }
+        },
+        {
+          "id": "act_mi331ws2",
+          "name": "Target: The Rifleman",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 68,
+            "y": 40
+          }
+        },
+        {
+          "id": "act_mi331yne",
+          "name": "Target: The Hangman",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 76,
+            "y": 40
+          }
+        },
+        {
+          "id": "act_mi331zvt",
+          "name": "Target: The Mad Bomber",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 76,
+            "y": 35
+          }
+        },
+        {
+          "id": "act_mi3321ru",
+          "name": "Target: The Mindbender",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 72,
+            "y": 35
+          }
+        },
+        {
+          "id": "act_mi3326rg",
+          "name": "Target: The Trickster",
+          "category": "Story",
+          "modeType": "Adventure - Baron Hunts",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 68,
+            "y": 35
+          }
+        },
+        {
+          "id": "act_mi345dji",
+          "name": "Empty Tank",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Azilis",
+            "Dusk Marauder"
+          ],
+          "description": "",
+          "position": {
+            "x": 49,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi345zp4",
+          "name": "Kingship Dock",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vilzii",
+            "Scorn",
+            "Chieftain"
+          ],
+          "description": "",
+          "position": {
+            "x": 58,
+            "y": 46
+          }
+        },
+        {
+          "id": "act_mi346qi5",
+          "name": "Wolfship Turbine",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Ogre",
+            "Segrex",
+            "the Tainted"
+          ],
+          "description": "",
+          "position": {
+            "x": 35,
+            "y": 31
+          }
+        },
+        {
+          "id": "act_mi347djz",
+          "name": "Trappers Cave",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Centurion",
+            "Garut Gra'am"
+          ],
+          "description": "",
+          "position": {
+            "x": 72,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi348b8f",
+          "name": "Shipyard AWO-23",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Fallen",
+            "Servitor",
+            "Zetix-7"
+          ],
+          "description": "",
+          "position": {
+            "x": 34,
+            "y": 58
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/D93BC280.png"
+    },
+    {
+      "id": "location_thealmighty",
+      "game": "Destiny 2",
+      "name": "The Almighty",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 33,
+        "y": 41
+      },
+      "activities": [],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "location_leviathan",
+      "game": "Destiny 2",
+      "name": "Leviathan",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 73,
+        "y": 54
+      },
+      "activities": [
+        {
+          "id": "act_mi37gg6t",
+          "name": "Duality",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37ni51",
+          "name": "Leviathan",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 270,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37o3yd",
+          "name": "Eater of Worlds",
+          "category": "Endgame",
+          "modeType": "Raid Lair",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 300,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37oenp",
+          "name": "Spire of Stars",
+          "category": "Endgame",
+          "modeType": "Raid Lair",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 370,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37pozt",
+          "name": "Crown of Sorrow",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi37pxsl",
+          "name": "Pantheon",
+          "category": "Activity",
+          "modeType": "Mission",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "planet_titan",
+      "game": "Destiny 2",
+      "name": "Titan",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 23,
+        "y": 53
+      },
+      "activities": [
+        {
+          "id": "act_mi32qzro",
+          "name": "Thief of Thieves",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 60,
+          "tags": [],
+          "description": "Recover the supplies that the Fallen have taken.",
+          "position": {
+            "x": 69,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32rhxp",
+          "name": "Bad Neighbors",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 60,
+          "tags": [],
+          "description": "Resolve a dangerous conflict between the Fallen and the Hive.",
+          "position": {
+            "x": 56,
+            "y": 66
+          }
+        },
+        {
+          "id": "act_mi32ruqk",
+          "name": "Deathless",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 70,
+          "tags": [],
+          "description": "Clear out the Knight that's keeping Sloane's crews from their work.",
+          "position": {
+            "x": 63,
+            "y": 34
+          }
+        },
+        {
+          "id": "act_mi32s4tz",
+          "name": "Siren Song",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 70,
+          "tags": [],
+          "description": "Disrupt a Hive Ritual to keep the Rig from sinking.",
+          "position": {
+            "x": 50,
+            "y": 27
+          }
+        },
+        {
+          "id": "act_mi33umwn",
+          "name": "Methane Flush",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Wizard",
+            "Karugul"
+          ],
+          "description": "",
+          "position": {
+            "x": 65,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi33vcuu",
+          "name": "Cargo Bay 3",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Ogre",
+            "Golmuut"
+          ],
+          "description": "",
+          "position": {
+            "x": 37,
+            "y": 34
+          }
+        },
+        {
+          "id": "act_mi33vuzb",
+          "name": "DS Quarters-2",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Knight",
+            "Thaan'Hul"
+          ],
+          "description": "",
+          "position": {
+            "x": 53,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi36p66z",
+          "name": "Deep Dive",
+          "category": "Season of the Deep",
+          "modeType": "Activity",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 41,
+            "y": 54
+          }
+        },
+        {
+          "id": "act_mi37hbql",
+          "name": "Ghosts of the Deep",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 64,
+            "y": 12
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/F738C280.png"
+    },
+    {
+      "id": "planet_io",
+      "game": "Destiny 2",
+      "name": "IO",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 22,
+        "y": 44
+      },
+      "activities": [
+        {
+          "id": "act_mi32w6ho",
+          "name": "Cliffhanger",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 130,
+          "tags": [],
+          "description": "Asher has information about the Vex's next conversion site, and he wants it stopped.",
+          "position": {
+            "x": 52,
+            "y": 49
+          }
+        },
+        {
+          "id": "act_mi32wfkr",
+          "name": "Postmodern Prometheus",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 130,
+          "tags": [],
+          "description": "Ikora is reluctantly allowing Asher to explore a plan where he'd convert the Traveler's energy into a form of synthetic Light.",
+          "position": {
+            "x": 76,
+            "y": 44
+          }
+        },
+        {
+          "id": "act_mi32whaz",
+          "name": "Unexpected Guests",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 120,
+          "tags": [],
+          "description": "Ikora's worried about some Taken emanations from beneath the moon's surface.",
+          "position": {
+            "x": 52,
+            "y": 63
+          }
+        },
+        {
+          "id": "act_mi32wir7",
+          "name": "Road Rage",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 120,
+          "tags": [],
+          "description": "Asher's worked up about Vex interest in the Io Vault. He's got an unusual suggestion for how to deal with the problem.",
+          "position": {
+            "x": 66,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi32wm7b",
+          "name": "Arecibo",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 220,
+          "tags": [],
+          "description": "Investigate a mysterious broadcast that only you and your Ghost can hear.",
+          "position": {
+            "x": 38,
+            "y": 51
+          }
+        },
+        {
+          "id": "act_mi340cle",
+          "name": "Grove of Ulan-Tan",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Minotaur",
+            "Qeldron",
+            "Keeper"
+          ],
+          "description": "",
+          "position": {
+            "x": 46,
+            "y": 24
+          }
+        },
+        {
+          "id": "act_mi3414au",
+          "name": "Aphix Conduit",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Hydra",
+            "Ruined Mind"
+          ],
+          "description": "",
+          "position": {
+            "x": 37,
+            "y": 32
+          }
+        },
+        {
+          "id": "act_mi341xgw",
+          "name": "Sanctum of Bones",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Taken",
+            "Knight",
+            "Pandrok",
+            "Pillar of Nothing"
+          ],
+          "description": "",
+          "position": {
+            "x": 65,
+            "y": 32
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/4039C280.png"
+    },
+    {
+      "id": "planet_mercury",
+      "game": "Destiny 2",
+      "name": "Mercury",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 29,
+        "y": 47
+      },
+      "activities": [
+        {
+          "id": "act_mi32ybmc",
+          "name": "Endless Branches",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 280,
+          "tags": [],
+          "description": "Look into the differences of the various timelines generated by the Vex's Reality Engine.",
+          "position": {
+            "x": 45,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32yg9k",
+          "name": "Bug in the System",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "Corrupt a Vex data-harvesting operation by withstanding an onslaught of Hive.",
+          "position": {
+            "x": 55,
+            "y": 50
+          }
+        },
+        {
+          "id": "act_mi32ygl6",
+          "name": "The Up and Up",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "The Vex are simulating the Fallen's battle tactics. Breach into their simulations and eliminate the targets.",
+          "position": {
+            "x": 55,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi32ygxw",
+          "name": "The Runner",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "The Vex has simulated a Cabal unit carrying important data within the forest. Track him down and defeat him.",
+          "position": {
+            "x": 45,
+            "y": 61
+          }
+        },
+        {
+          "id": "act_mi32yhpu",
+          "name": "Vex Milk",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": 280,
+          "tags": [],
+          "description": "Ikora wants you to try and investigate the origins of the Vex by collecting special samples of their radiolarian fluid and transmitting it to Brother Vance.",
+          "position": {
+            "x": 58,
+            "y": 55
+          }
+        },
+        {
+          "id": "act_mi342tdh",
+          "name": "Pariah's Refuge",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Vex",
+            "Minotaur",
+            "Subterranean Mind"
+          ],
+          "description": "",
+          "position": {
+            "x": 43,
+            "y": 55
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/2C3BC280.png"
+    },
+    {
+      "id": "planet_kepler",
+      "game": "Destiny 2",
+      "name": "Kepler",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 10,
+        "y": 14
+      },
+      "activities": [
+        {
+          "id": "act_mi37u966",
+          "name": "The Desert Perpetual",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg"
+    },
+    {
+      "id": "planet_mars",
+      "game": "Destiny 2",
+      "name": "Mars",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "position": {
+        "x": 27,
+        "y": 67
+      },
+      "activities": [
+        {
+          "id": "act_mi330341",
+          "name": "Hephaestus",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 58,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi330c3y",
+          "name": "Incursion",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi330j1l",
+          "name": "Deathly Tremors",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 61,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi330qnx",
+          "name": "Psionic Potential",
+          "category": "Story",
+          "modeType": "Adventure",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 55,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi343pp7",
+          "name": "Core Terminus",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Knight",
+            "Keresh",
+            "Champion of Xol"
+          ],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 56
+          }
+        },
+        {
+          "id": "act_mi344g4g",
+          "name": "Ma'adim Subterrane",
+          "category": "Discovery",
+          "modeType": "Lost Sector",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Cabal",
+            "Colossus",
+            "Valus Dulurc"
+          ],
+          "description": "",
+          "position": {
+            "x": 59,
+            "y": 73
+          }
+        },
+        {
+          "id": "act_mi365pfu",
+          "name": "Heist: Mars",
+          "category": "Vanguard Operations",
+          "modeType": "Battleground",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [
+            "Hive",
+            "Darkblade",
+            "Kelgorath",
+            "Risen from Bones"
+          ],
+          "description": "",
+          "position": {
+            "x": 68,
+            "y": 48
+          }
+        },
+        {
+          "id": "act_mi37h1g9",
+          "name": "Spire of the Watcher",
+          "category": "Endgame",
+          "modeType": "Dungeon",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 52,
+            "y": 38
+          }
+        }
+      ],
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/maps/5A34C280.png"
+    },
+    {
+      "id": "planet_venus",
+      "name": "Venus",
+      "game": "Destiny",
+      "type": "planet",
+      "icon": "assets/icons/placeholder.png",
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg",
+      "activities": [
+        {
+          "id": "act_mi37kemx",
+          "name": "Vault of Glass",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "location_dreadnaught",
+      "name": "The Dreadnaught, Rings of Saturn",
+      "game": "Destiny",
+      "type": "location",
+      "icon": "assets/icons/placeholder.png",
+      "iconOverlay1": "",
+      "iconOverlay2": "",
+      "iconOverlay3": "",
+      "position": {
+        "x": 50,
+        "y": 50
+      },
+      "backgroundImage": "assets/backgrounds/default_director_bg.jpg",
+      "mapImage": "assets/backgrounds/default_director_bg.jpg",
+      "activities": [
+        {
+          "id": "act_mi37m223",
+          "name": "King's Fall",
+          "category": "Endgame",
+          "modeType": "Raid",
+          "thumbnail": "assets/icons/placeholder.png",
+          "recommendedLight": null,
+          "tags": [],
+          "description": "",
+          "position": {
+            "x": 50,
+            "y": 50
+          }
+        }
+      ]
+    }
+  ]
+}
