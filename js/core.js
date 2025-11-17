@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadDataFromFile();
 });
 
-
 // ---------------------- Tabs ----------------------
 
 function initTabs() {
@@ -62,7 +61,6 @@ function setActiveTab(tab) {
     if (typeof renderLocationsView === "function") renderLocationsView();
   }
 }
-
 
 // ---------------------- Data loading ----------------------
 
@@ -158,7 +156,6 @@ function rebuildAllActivities() {
   });
   state.allActivities = all;
 }
-
 
 // ---------------------- Utils ----------------------
 
