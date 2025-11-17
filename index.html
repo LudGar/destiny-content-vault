@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Destiny PVE Director (Viewer)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ======================= -->
+  <!--        TOP NAV          -->
+  <!-- ======================= -->
+  <header class="top-nav">
+    <button class="top-tab-button active" data-tab="destinations">DESTINATIONS</button>
+    <button class="top-tab-button" data-tab="locations">LOCATIONS</button>
+  </header>
+
+
+  <!-- ============================================================= -->
+  <!--                       DESTINATIONS PAGE                       -->
+  <!-- ============================================================= -->
+  <section id="page-destinations" class="page visible">
+
+    <div id="destinations-container">
+      <div id="destinations-background"></div>
+      <div id="destinations-map-layer"></div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ============================================================= -->
+  <!--                         LOCATIONS PAGE                        -->
+  <!-- ============================================================= -->
+  <section id="page-locations" class="page hidden">
+
+    <!-- Left sidebar listing all destinations -->
+    <aside id="locations-list-panel">
+      <h2>LOCATIONS</h2>
+      <div id="locations-list"></div>
+    </aside>
+
+    <!-- Main area showing the selected location/map -->
+    <main id="location-view">
+
+      <div id="location-header">
+        <h1 id="location-title">Select a Destination</h1>
+        <div id="location-meta"></div>
+      </div>
+
+      <!-- The map image for the selected location -->
+      <div id="location-map-container">
+        <div id="location-map-inner">
+          <img id="location-map-image" src="" alt="">
+          <div id="location-activity-layer"></div>
+        </div>
+      </div>
+
+    </main>
+
+  </section>
+
+
+
+  <!-- ============================================================= -->
+  <!--                         JAVASCRIPT                             -->
+  <!-- ============================================================= -->
+  <script src="js/core.js"></script>
+  <script src="js/views.js"></script>
+
+</body>
+</html>
