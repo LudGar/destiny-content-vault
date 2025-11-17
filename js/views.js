@@ -1,10 +1,5 @@
 "use strict";
 
-
-// ---------------------------------------------------------
-// DESTINATIONS (Solar Map)
-// ---------------------------------------------------------
-
 function renderDestinationsView() {
   const bgEl = document.getElementById("destinations-background");
   const layerEl = document.getElementById("destinations-map-layer");
@@ -18,7 +13,6 @@ function renderDestinationsView() {
     state.activeDestinationId = selectedDest.id;
   }
 
-  // Director background is static via CSS now.
   layerEl.innerHTML = "";
 
   state.destinations.forEach(dest => {
@@ -136,10 +130,8 @@ function initDestinationsPan() {
   }
 }
 
-
-
 // ---------------------------------------------------------
-// LOCATIONS (Map View + Tooltips) – read-only nodes
+// LOCATIONS (Map View + Tooltips)
 // ---------------------------------------------------------
 
 let currentActivityTooltip = null;
@@ -354,7 +346,6 @@ function initLocationMapPan() {
     window.removeEventListener("mouseup", onMouseUp);
   }
 }
-
 
 // ---------------------- Tooltip ----------------------
 
