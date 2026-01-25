@@ -99,14 +99,8 @@ async function boot() {
     getSelection: () => selection,
     setSelection,
     setRoute,
-
-    // theming
     getTheme,
-
-    // persistence
     save,
-
-    // view
     render
   };
 
@@ -115,11 +109,7 @@ async function boot() {
 
 window.addEventListener("resize", () => window.__APP__?.render?.());
 window.addEventListener("hashchange", () => window.__APP__?.render?.());
-
 brandBtn.addEventListener("click", () => setRoute({ page: "director" }));
-
-  else alert("Editor not available (read-only build).");
-});
 
 boot().catch(err => {
   console.error(err);
