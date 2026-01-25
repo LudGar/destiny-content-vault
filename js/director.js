@@ -1,4 +1,3 @@
-// director.js
 import { showTooltipAt, hideTooltip, nodeTooltipHtml } from "./tooltip.js";
 
 const ORBITS = { moon: "earth", phobos: "mars", io: "jupiter", europa: "jupiter", titan: "saturn" };
@@ -39,7 +38,11 @@ function addLine(svg, x1, y1, x2, y2, alpha = 0.14) {
 }
 
 function normalizeIconUrl(v) {
-  if (typeof v === "string") return v;
+  if (typeof v === "string") {
+    const t = v.trim();
+    if (!t || t === "null" || t === "undefined") return "";
+    return t;
+  }
   if (v && typeof v === "object") {
     if (typeof v.image === "string") return v.image;
     if (typeof v.src === "string") return v.src;
@@ -65,6 +68,7 @@ function hexToRgb(hex) {
   }
   return { r: 120, g: 190, b: 255 }; // fallback #78BEFF
 }
+
 
 // Cache: url|size|tint -> dataURL (or null)
 const __BLUE_TINT_CACHE__ = new Map();
@@ -131,6 +135,7 @@ async function blueToAlphaTintDataUrl(url, size, tintHex) {
     };
 
     img.src = url;
+
   });
 
   const out = await outP;
@@ -228,6 +233,9 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
       const y = midY - moonFirstLift - idx * moonGap;
       const size = 30;
 
+      // Register moon position so locations can be attached to moons too.
+      pos.set(m.key, { x, y, size, kind: "moon" });
+
       addLine(svg, x, y + size * 0.15, parent.x, midY - parent.size * 0.15, 0.14);
 
       const node = makeBodyNodeSync({ stageEl, universe, body: m, x, y, size, glyph: bodyGlyph("moon") });
@@ -237,151 +245,135 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
     });
   }
 
-  // --- Orbital locations ABOVE parent (clickable) ---
-  const orbitalsByParent = new Map();
-  for (const b of primaries) {
-    const parentKey = b.key;
-    const linked = getLinkedLocations(universe, b);
-    const orbitalLocs = linked
-      .filter(p => p.director?.bodyKey === parentKey && p.director?.orbital)
-      .slice()
-      .sort((a, bb) => (Number(a.director?.stackOrder ?? 0) - Number(bb.director?.stackOrder ?? 0)));
+  // --- Director location dots (above/below bodies) ---
+  // Locations inherit their dot color/icon from a per-location nodeType.
+  // We support both primaries and moons as attach points.
+  const allBodies = [...primaries, ...moons];
 
-    if (orbitalLocs.length) orbitalsByParent.set(parentKey, orbitalLocs);
+  function getLocNodeType(loc, fallback) {
+    const d = loc?.director || {};
+    const t = (d.nodeType ?? d.type ?? "");
+    if (typeof t === "string" && t.trim()) return t.trim();
+    return fallback;
+  }
+
+  function themeForLoc(loc, fallbackType) {
+    const t = getLocNodeType(loc, fallbackType);
+    return getTheme?.(t) || { label: t, icon: "•", color: "#78BEFF" };
   }
 
   const orbitalFirstLift = 110;
   const orbitalGap = 92;
-  const orbitalLabelNudge = 22;
-  const orbitalTheme = getTheme?.("Landing Zone") || { label: "Landing Zone", icon: "✶", color: "#FFB020" };
+  const labelNudge = 22;
+  const dotSize = 26;
 
-  for (const [parentKey, locs] of orbitalsByParent.entries()) {
-    const parent = pos.get(parentKey);
-    if (!parent) continue;
-
-    locs.forEach((loc, idx) => {
-      const x = parent.x;
-      const y = midY - orbitalFirstLift - idx * orbitalGap;
-      const size = 26;
-
-      addLine(svg, x, y, parent.x, midY, 0.12);
-
-      const dot = document.createElement("div");
-      dot.className = "node";
-      dot.style.position = "absolute";
-      // CSS already has translate(-50%,-50%) on .node, but keep it safe if your CSS changes:
-      dot.style.transform = "translate(-50%,-50%)";
-      dot.style.width = `${size}px`;
-      dot.style.height = `${size}px`;
-      dot.style.left = `${x}px`;
-      dot.style.top = `${y}px`;
-      dot.style.zIndex = "11";
-      dot.style.borderColor = `${orbitalTheme.color}55`;
-      dot.innerHTML = `
-        <div class="ring"></div>
-        <div class="glyph" style="color:${escapeHtml(orbitalTheme.color)};">${escapeHtml(orbitalTheme.icon || "✶")}</div>
-      `;
-
-      dot.addEventListener("click", (e) => {
-        e.stopPropagation();
-        setSelection?.({ kind: "planet", planetId: loc.id });
-        setRoute?.({ page: "location", planetId: loc.id });
-      });
-
-      dot.addEventListener("mousemove", (e) => {
-        const fakeNode = { id: loc.id, name: loc.name, type: "Landing Zone", enabled: true, description: loc.subtitle || "" };
-        showTooltipAt(e.clientX, e.clientY, nodeTooltipHtml({ node: fakeNode, theme: orbitalTheme, planet: { name: parentKey } }));
-      });
-      dot.addEventListener("mouseleave", hideTooltip);
-
-      stageEl.appendChild(dot);
-
-      const lab = document.createElement("div");
-      lab.style.position = "absolute";
-      lab.style.left = `${x}px`;
-      lab.style.top = `${y + orbitalLabelNudge}px`;
-      lab.style.transform = "translateX(-50%)";
-      lab.style.fontFamily = "var(--mono)";
-      lab.style.fontSize = "10px";
-      lab.style.letterSpacing = ".08em";
-      lab.style.color = "rgba(255,255,255,.55)";
-      lab.style.zIndex = "9";
-      lab.textContent = (loc.name || loc.id).toUpperCase();
-      stageEl.appendChild(lab);
-    });
-  }
-
-  // --- Surface locations BELOW parent (click these) ---
+  // collect: orbitals + surface
+  const orbitalsByParent = new Map();
   const surfaceByParent = new Map();
-  for (const b of primaries) {
+
+  for (const b of allBodies) {
     const parentKey = b.key;
     const linked = getLinkedLocations(universe, b);
+    if (!linked.length) continue;
 
-    const surfaceLocs = linked
-      .filter(p => !(p.director?.bodyKey === parentKey && p.director?.orbital))
+    const orbitalLocs = linked
+      .filter(p => p.director?.bodyKey === parentKey && !!p.director?.orbital)
       .slice()
       .sort((a, bb) => (Number(a.director?.stackOrder ?? 0) - Number(bb.director?.stackOrder ?? 0)));
 
+    const surfaceLocs = linked
+      .filter(p => !(p.director?.bodyKey === parentKey && !!p.director?.orbital))
+      .slice()
+      .sort((a, bb) => (Number(a.director?.stackOrder ?? 0) - Number(bb.director?.stackOrder ?? 0)));
+
+    if (orbitalLocs.length) orbitalsByParent.set(parentKey, orbitalLocs);
     if (surfaceLocs.length) surfaceByParent.set(parentKey, surfaceLocs);
   }
 
-  const surfaceFirstDrop = 110;
-  const surfaceGap = 92;
-  const surfaceLabelNudge = 22;
-  const surfaceTheme = getTheme?.("Patrol") || { label: "Patrol", icon: "◆", color: "#78BEFF" };
+  function makeLocDot({ loc, parentKey, parentPos, x, y, theme, kindTag }) {
+    const dot = document.createElement("div");
+    dot.className = "node";
+    dot.style.position = "absolute";
+    dot.style.transform = "translate(-50%,-50%)";
+    dot.style.width = `${dotSize}px`;
+    dot.style.height = `${dotSize}px`;
+    dot.style.left = `${x}px`;
+    dot.style.top = `${y}px`;
+    dot.style.zIndex = "11";
+    dot.style.borderColor = `${theme.color}55`;
 
-  for (const [parentKey, locs] of surfaceByParent.entries()) {
-    const parent = pos.get(parentKey);
-    if (!parent) continue;
+    // Add a tiny moon tag if this location is attached to a moon body.
+    const tag = kindTag ? `<div style="position:absolute; right:-6px; bottom:-6px; width:14px; height:14px; border-radius:999px; border:1px solid rgba(255,255,255,.18); background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; font-size:9px; font-family:var(--mono); color:${escapeHtml(theme.color)};">${escapeHtml(kindTag)}</div>` : "";
+
+    dot.innerHTML = `
+      <div class="ring"></div>
+      <div class="glyph" style="color:${escapeHtml(theme.color)};">${escapeHtml(theme.icon || "•")}</div>
+      ${tag}
+    `;
+
+    dot.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setSelection?.({ kind: "planet", planetId: loc.id });
+      setRoute?.({ page: "location", planetId: loc.id });
+    });
+
+    dot.addEventListener("mousemove", (e) => {
+      const fakeNode = {
+        id: loc.id,
+        name: loc.name,
+        type: theme.label || getLocNodeType(loc, "Location"),
+        enabled: true,
+        description: loc.subtitle || ""
+      };
+      showTooltipAt(e.clientX, e.clientY, nodeTooltipHtml({ node: fakeNode, theme, planet: { name: parentKey } }));
+    });
+    dot.addEventListener("mouseleave", hideTooltip);
+
+    stageEl.appendChild(dot);
+
+    const lab = document.createElement("div");
+    lab.style.position = "absolute";
+    lab.style.left = `${x}px`;
+    lab.style.top = `${y + labelNudge}px`;
+    lab.style.transform = "translateX(-50%)";
+    lab.style.fontFamily = "var(--mono)";
+    lab.style.fontSize = "10px";
+    lab.style.letterSpacing = ".08em";
+    lab.style.color = "rgba(255,255,255,.55)";
+    lab.style.zIndex = "9";
+    lab.textContent = (loc.name || loc.id).toUpperCase();
+    stageEl.appendChild(lab);
+  }
+
+  // Orbitals ABOVE the body they are attached to.
+  for (const [parentKey, locs] of orbitalsByParent.entries()) {
+    const parentPos = pos.get(parentKey);
+    if (!parentPos) continue;
+    const isMoon = parentPos.kind === "moon";
 
     locs.forEach((loc, idx) => {
-      const x = parent.x;
-      const y = midY + surfaceFirstDrop + idx * surfaceGap;
-      const size = 26;
+      const x = parentPos.x;
+      const y = parentPos.y - orbitalFirstLift - idx * orbitalGap;
+      const theme = themeForLoc(loc, "Landing Zone");
 
-      addLine(svg, x, y, parent.x, midY, 0.10);
+      addLine(svg, x, y, parentPos.x, parentPos.y, 0.12);
+      makeLocDot({ loc, parentKey, parentPos, x, y, theme, kindTag: isMoon ? "M" : "" });
+    });
+  }
 
-      const dot = document.createElement("div");
-      dot.className = "node";
-      dot.style.position = "absolute";
-      dot.style.transform = "translate(-50%,-50%)";
-      dot.style.width = `${size}px`;
-      dot.style.height = `${size}px`;
-      dot.style.left = `${x}px`;
-      dot.style.top = `${y}px`;
-      dot.style.zIndex = "11";
-      dot.style.borderColor = `${surfaceTheme.color}55`;
-      dot.innerHTML = `
-        <div class="ring"></div>
-        <div class="glyph" style="color:${escapeHtml(surfaceTheme.color)};">${escapeHtml(surfaceTheme.icon || "◆")}</div>
-      `;
+  // Surface locations BELOW the body they are attached to.
+  for (const [parentKey, locs] of surfaceByParent.entries()) {
+    const parentPos = pos.get(parentKey);
+    if (!parentPos) continue;
+    const isMoon = parentPos.kind === "moon";
 
-      dot.addEventListener("click", (e) => {
-        e.stopPropagation();
-        setSelection?.({ kind: "planet", planetId: loc.id });
-        setRoute?.({ page: "location", planetId: loc.id });
-      });
+    locs.forEach((loc, idx) => {
+      const x = parentPos.x;
+      const y = parentPos.y + orbitalFirstLift + idx * orbitalGap;
+      const theme = themeForLoc(loc, "Patrol");
 
-      dot.addEventListener("mousemove", (e) => {
-        const fakeNode = { id: loc.id, name: loc.name, type: surfaceTheme.label || "Patrol", enabled: true, description: loc.subtitle || "" };
-        showTooltipAt(e.clientX, e.clientY, nodeTooltipHtml({ node: fakeNode, theme: surfaceTheme, planet: { name: parentKey } }));
-      });
-      dot.addEventListener("mouseleave", hideTooltip);
-
-      stageEl.appendChild(dot);
-
-      const lab = document.createElement("div");
-      lab.style.position = "absolute";
-      lab.style.left = `${x}px`;
-      lab.style.top = `${y + surfaceLabelNudge}px`;
-      lab.style.transform = "translateX(-50%)";
-      lab.style.fontFamily = "var(--mono)";
-      lab.style.fontSize = "10px";
-      lab.style.letterSpacing = ".08em";
-      lab.style.color = "rgba(255,255,255,.55)";
-      lab.style.zIndex = "9";
-      lab.textContent = (loc.name || loc.id).toUpperCase();
-      stageEl.appendChild(lab);
+      addLine(svg, x, y, parentPos.x, parentPos.y, 0.10);
+      makeLocDot({ loc, parentKey, parentPos, x, y, theme, kindTag: isMoon ? "M" : "" });
     });
   }
 
