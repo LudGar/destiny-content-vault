@@ -1,0 +1,64 @@
+{
+  "types": {
+    "Story": {
+      "color": "#6BA4FF",
+      "icon": "▣",
+      "label": "Story"
+    },
+    "Crucible": {
+      "color": "#FF4D4D",
+      "icon": "⚔",
+      "label": "Crucible"
+    },
+    "Gambit": {
+      "color": "#3DFFB5",
+      "icon": "☿",
+      "label": "Gambit"
+    },
+    "Patrol": {
+      "color": "#78BEFF",
+      "icon": "◎",
+      "label": "Patrol"
+    },
+    "Lost Sector": {
+      "color": "#B58BFF",
+      "icon": "⬣",
+      "label": "Lost Sector"
+    },
+    "Strike": {
+      "color": "#4DD6FF",
+      "icon": "➤",
+      "label": "Strike"
+    },
+    "Raid": {
+      "color": "#FFB020",
+      "icon": "✶",
+      "label": "Raid"
+    },
+    "Dungeon": {
+      "color": "#C7A4FF",
+      "icon": "⬟",
+      "label": "Dungeon"
+    },
+    "Public Event": {
+      "color": "#FF8A3D",
+      "icon": "☼",
+      "label": "Public Event"
+    },
+
+    "Landing Zone": {
+      "color": "#5AAEFF",
+      "icon": "⬇",
+      "label": "Landing Zone",
+      "kind": "location"
+    },
+
+    "Vendor": {
+      "color": "#5C9648",
+      "icon": "▣",
+      "label": "Vendor",
+      "kind": "npc",
+      "card": "vendor"
+    }
+  }
+}
