@@ -5,14 +5,22 @@ const UNIVERSE_PATH = "./data/universe.json";
 const CATALOG_PATH  = "./data/activities_catalog.json";
 
 /* -------------------- Universe -------------------- */
+export async function loadUniverseJson({ allowLocalOverride = false, bustCache = true } = {}) {
+  // 1) localStorage override (optional)
+  if (allowLocalOverride) {
+    const raw = localStorage.getItem(UNIVERSE_KEY);
+    if (raw) return JSON.parse(raw);
+  } else {
+    // If override exists but we are ignoring it, warn so it’s obvious.
+    if (localStorage.getItem(UNIVERSE_KEY)) {
+      console.warn(
+        `[storage] localStorage has ${UNIVERSE_KEY} but allowLocalOverride=false, using packaged ${UNIVERSE_PATH}`
+      );
+    }
+  }
 
-export async function loadUniverseJson() {
-  // 1) localStorage override
-  const raw = localStorage.getItem(UNIVERSE_KEY);
-  if (raw) return JSON.parse(raw);
-
-  // 2) fallback to packaged file
-  const res = await fetch(UNIVERSE_PATH, { cache: "no-store" });
+  const url = bustCache ? `${UNIVERSE_PATH}?v=${Date.now()}` : UNIVERSE_PATH;
+  const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load ${UNIVERSE_PATH} (${res.status})`);
   return await res.json();
 }
@@ -26,29 +34,24 @@ export function clearUniverseJsonOverride() {
 }
 
 /* -------------------- Activity Catalog -------------------- */
-
-// By default, the catalog is treated as "packaged" data (read-only).
-// If you want to allow local override edits for the catalog too,
-// set allowLocalOverride=true when calling loadActivitiesCatalog().
-export async function loadActivitiesCatalog({ allowLocalOverride = false } = {}) {
+export async function loadActivitiesCatalog({ allowLocalOverride = false, bustCache = true } = {}) {
   if (allowLocalOverride) {
     const raw = localStorage.getItem(CATALOG_KEY);
     if (raw) return JSON.parse(raw);
   }
 
-  const res = await fetch(CATALOG_PATH, { cache: "no-store" });
+  const url = bustCache ? `${CATALOG_PATH}?v=${Date.now()}` : CATALOG_PATH;
+  const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load ${CATALOG_PATH} (${res.status})`);
   const json = await res.json();
 
   // Normalize expected shape
-  // We expect { types: { "Patrol": {color, icon, label, ...}, ... } }
   if (!json || typeof json !== "object") {
-    throw new Error("activities_catalog.json is not valid JSON object");
+    throw new Error("activities_catalog.json is not a valid JSON object");
   }
   if (!json.types || typeof json.types !== "object") {
     json.types = {};
   }
-
   return json;
 }
 
@@ -61,17 +64,19 @@ export function clearActivitiesCatalogOverride() {
 }
 
 /* -------------------- Combined loader -------------------- */
-
-export async function loadAllData({ allowCatalogLocalOverride = false } = {}) {
+export async function loadAllData({
+  allowUniverseLocalOverride = false,
+  allowCatalogLocalOverride = false,
+  bustCache = true
+} = {}) {
   const [universe, catalog] = await Promise.all([
-    loadUniverseJson(),
-    loadActivitiesCatalog({ allowLocalOverride: allowCatalogLocalOverride })
+    loadUniverseJson({ allowLocalOverride: allowUniverseLocalOverride, bustCache }),
+    loadActivitiesCatalog({ allowLocalOverride: allowCatalogLocalOverride, bustCache })
   ]);
   return { universe, catalog };
 }
 
 /* -------------------- File helpers -------------------- */
-
 export function downloadJson(filename, obj) {
   const blob = new Blob([JSON.stringify(obj, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
@@ -99,8 +104,6 @@ export async function pickJsonFile() {
 }
 
 /* -------------------- Theme resolver -------------------- */
-
-// Convenience: resolve a node theme from the catalog safely.
 export function getThemeFromCatalog(catalog, type) {
   const t = catalog?.types?.[type];
   if (t) return t;
