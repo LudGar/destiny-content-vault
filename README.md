@@ -73,22 +73,18 @@ Defines:
 ## Rendering Details
 
 ### Director
-- Bodies are horizontally distributed and always centered
 - Layout responds to window resizing
 - SVG is used only for connector lines
 - Nodes and labels are DOM-based for clarity and interaction
 
 ### Icons
 - Body icons may be PNGs
-- Only the **blue channel** of PNGs is used
-- Blue channel drives both **color and alpha**
 - Automatic fallback to glyph icons if an image fails to load
 
 ---
 
 ## Tooltips
 
-Tooltips show:
 - Activity name
 - Activity type
 - Description
@@ -96,17 +92,10 @@ Tooltips show:
 - Bosses
 - Status (active / disabled)
 
-Tooltips:
-- Never activate when hovering labels
-- Automatically stay within viewport bounds
-
 ---
 
 ## Goals & Philosophy
 
-- **Read-only by default**: designed to work perfectly as a static site
-- **Separation of data and rendering**
-- **Destiny-inspired**, but not a clone
 - Built to scale with large universes and dense maps
 - Prioritizes clarity, alignment, and visual hierarchy
 
@@ -115,17 +104,10 @@ Tooltips:
 ## Hosting
 
 The project runs entirely client-side and can be hosted on:
-- GitHub Pages
 - Any static file host
 - Local `http-server` / `python -m http.server`
 
 No build step required.
-
----
-
-## License
-
-MIT (or replace with your preferred license)
 
 ---
 
