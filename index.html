@@ -17,8 +17,7 @@
       <div class="crumbs" id="crumbs"></div>
 
       <div class="topbarRight">
-        <button class="btn ghost" id="toggleEditorBtn" title="Toggle editor (if present)">EDITOR</button>
-      </div>
+</div>
     </header>
 
     <main class="main">
@@ -30,12 +29,9 @@
 
   <script type="module" src="./app.js"></script>
 
-  <!-- Optional editor: safe-load (won't break if missing) -->
   <script>
     const s = document.createElement("script");
     s.type = "module";
-    s.src = "./js/editor.js";
-    s.onerror = () => console.log("[Editor] editor.js not found (read-only mode).");
     document.head.appendChild(s);
   </script>
 </body>
