@@ -1,10 +1,5 @@
-// storage.js
-// - Loads universe.json (with optional localStorage override)
-// - Loads activities_catalog.json (no local override by default; you can add if you want)
-// - Provides save/clear/export/import helpers
-
 const UNIVERSE_KEY = "destiny_universe_json_v1";
-const CATALOG_KEY  = "destiny_activities_catalog_json_v1"; // optional (only used if you enable catalog local override)
+const CATALOG_KEY  = "destiny_activities_catalog_json_v1";
 
 const UNIVERSE_PATH = "./data/universe.json";
 const CATALOG_PATH  = "./data/activities_catalog.json";
