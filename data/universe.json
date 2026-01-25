@@ -20,7 +20,8 @@
         "kind": "planet",
         "locations": [
           "vaulted_mercury",
-          "mercury_27cd71"
+          "mercury_27cd71",
+          "loc_c10bdc"
         ],
         "icon": "assets\\icons\\DC7D0A81.png",
         "color": "#78BEFF",
@@ -31,8 +32,7 @@
         "label": "Venus (II)",
         "kind": "planet",
         "locations": [
-          "loc_d0669c",
-          "loc_40501f"
+          "loc_d0669c"
         ],
         "icon": "assets\\icons\\E27D0A81.png",
         "color": "#78BEFF",
@@ -45,11 +45,13 @@
         "locations": [
           "cosmodrome",
           "tower",
-          "old_tower",
-          "farm",
           "earth_edz",
-          "loc_fe3a01",
-          "moon_721214"
+          "moon_721214",
+          "loc_6b7492",
+          "loc_4c9e12",
+          "loc_81a7f9",
+          "loc_a25ffe",
+          "loc_f75ae1"
         ],
         "icon": "assets\\icons\\E77D0A81.png",
         "color": "#78BEFF",
@@ -61,7 +63,12 @@
         "kind": "planet",
         "locations": [
           "vaulted_mars",
-          "mars_e31831"
+          "mars_e31831",
+          "loc_1526d8",
+          "loc_9c3bae",
+          "loc_3e2aa8",
+          "loc_c0cc81",
+          "loc_af8ae4"
         ],
         "icon": "assets\\icons\\E47D0A81.png",
         "color": "#78BEFF",
@@ -75,17 +82,22 @@
           "loc_e6e2ee",
           "loc_615175",
           "loc_8660ec",
-          "loc_43e199"
+          "loc_43e199",
+          "loc_6665c7"
         ],
-        "icon": {
-          "image": ""
-        }
+        "icon": "",
+        "color": "#658",
+        "size": 0
       },
       {
         "key": "jupiter",
         "label": "Jupiter (V)",
         "kind": "planet",
-        "locations": [],
+        "locations": [
+          "loc_97a6fc",
+          "loc_4e7dbe",
+          "loc_20de6f"
+        ],
         "icon": "assets\\icons\\FE7D0A81.png",
         "color": "#78BEFF",
         "size": 0
@@ -116,7 +128,9 @@
         "label": "Neptune (VIII)",
         "kind": "planet",
         "locations": [
-          "neomuna"
+          "neomuna",
+          "loc_6a45b3",
+          "loc_644c95"
         ],
         "icon": "assets\\icons\\F27D0A81.png",
         "color": "#78BEFF",
@@ -126,19 +140,24 @@
         "key": "body_51eb",
         "label": "Unknown Space",
         "kind": "planet",
-        "locations": [],
-        "icon": "null",
-        "color": "#78BEFF",
+        "locations": [
+          "loc_046c36",
+          "loc_f73a59"
+        ],
+        "icon": "",
+        "color": "#78BEDD",
         "size": 0
       },
       {
         "key": "body_cecd",
-        "label": "Keplar",
+        "label": "The Oort Cloud",
         "kind": "planet",
-        "locations": [],
-        "icon": {
-          "image": ""
-        }
+        "locations": [
+          "loc_aad29a"
+        ],
+        "icon": "",
+        "color": "#78BEFF",
+        "size": 0
       }
     ]
   },
@@ -227,7 +246,7 @@
   "planets": [
     {
       "id": "earth_edz",
-      "name": "EUROPEAN DEAD ZONE",
+      "name": "European Dead Zone",
       "subtitle": "EDZ",
       "map": {
         "image": "assets/maps/2639C280.png",
@@ -249,23 +268,27 @@
           "id": "edz_strike",
           "type": "Strike",
           "name": "Lake of Shadows",
-          "x": 2062,
-          "y": 1772,
-          "size": 24,
+          "x": 2074,
+          "y": 1741,
+          "size": 96,
           "enabled": true,
-          "description": "Purge the European Dead Zone of the Taken and Shadow Legion forces threatening to overtake the Reservoir and poison the precious water it holds."
+          "description": "Purge the European Dead Zone of the Taken and Shadow Legion forces threatening to overtake the Reservoir and poison the precious water it holds.",
+          "enemies": [],
+          "bosses": []
         },
         {
           "id": "node_6d6a46",
           "type": "Vendor",
           "name": "Devrim Kay",
-          "x": 1744,
-          "y": 1568,
+          "x": 1747,
+          "y": 1571,
           "size": 22,
           "enabled": true,
           "subtitle": "Dead Zone Sniper",
           "portrait": "assets\\tool\\devrim.png",
-          "description": "Ever the gentleman sniper, Devrim Kay holds fast in the wilds of the EDZ."
+          "description": "Ever the gentleman sniper, Devrim Kay holds fast in the wilds of the EDZ.",
+          "enemies": [],
+          "bosses": []
         },
         {
           "id": "node_731481",
@@ -308,11 +331,13 @@
           "id": "node_e2249e",
           "type": "Dungeon",
           "name": "Warlord's Ruin",
-          "x": 2165,
-          "y": 1255,
-          "size": 22,
+          "x": 2160,
+          "y": 1252,
+          "size": 48,
           "enabled": true,
-          "description": "Nestled deep in the mountains of the EDZ, Scorn lay claim to a Dark Age castle containing dangerous relics, and a blighted vengeance festers in the dirt."
+          "description": "Nestled deep in the mountains of the EDZ, Scorn lay claim to a Dark Age castle containing dangerous relics, and a blighted vengeance festers in the dirt.",
+          "enemies": [],
+          "bosses": []
         },
         {
           "id": "node_c542e8",
@@ -397,7 +422,8 @@
           "enabled": true,
           "description": "",
           "enemies": [
-            "Fallen"
+            "Fallen",
+            "Cabal"
           ],
           "bosses": [
             "Servitor"
@@ -479,8 +505,8 @@
           "id": "node_37eadb",
           "type": "Landing Zone",
           "name": "Winding Cove",
-          "x": 820,
-          "y": 1759,
+          "x": 824,
+          "y": 1773,
           "size": 22,
           "enabled": true,
           "description": "Travel to Winding Cove."
@@ -545,8 +571,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 578,
-          "y": 1405,
+          "x": 582,
+          "y": 1402,
           "size": 22,
           "enabled": true,
           "enemies": [
@@ -575,9 +601,9 @@
           "subtext": "",
           "description": "Stifle the legacy of a notorious ironmonger providing weapons to the Shadow Legion.",
           "portrait": "",
-          "x": 634,
-          "y": 1034,
-          "size": 22,
+          "x": 618,
+          "y": 958,
+          "size": 96,
           "enabled": true,
           "enemies": [],
           "bosses": []
@@ -633,12 +659,383 @@
           "y": 416,
           "size": 22,
           "enabled": true
+        },
+        {
+          "id": "node_0bab69",
+          "type": "Story",
+          "name": "Adieu",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1774,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_734e17",
+          "type": "Story",
+          "name": "Spark",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1816,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a76535",
+          "type": "Story",
+          "name": "Combustion",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1857,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_534ef1",
+          "type": "Story",
+          "name": "Payback",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1900,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_841602",
+          "type": "Story",
+          "name": "Unbroken",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1937,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1f6145",
+          "type": "Story",
+          "name": "Larceny",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1980,
+          "y": 1080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ff7f70",
+          "type": "Story",
+          "name": "A Deadly Trial",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1772,
+          "y": 1174,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b0f316",
+          "type": "Story",
+          "name": "Off-World Recovery",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1984,
+          "y": 1173,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7830ea",
+          "type": "Adventure",
+          "name": "A Frame Job",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1769,
+          "y": 922,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_080251",
+          "type": "Adventure",
+          "name": "A New Frontier",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1813,
+          "y": 924,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4ba596",
+          "type": "Adventure",
+          "name": "Anti-Anti Air",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2012,
+          "y": 927,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_90ccc5",
+          "type": "Adventure",
+          "name": "Calling Them Home",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2090,
+          "y": 928,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_82dbc0",
+          "type": "Adventure",
+          "name": "Dark Alliance",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1921,
+          "y": 924,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_67a266",
+          "type": "Adventure",
+          "name": "Getting Your Hands Dirty",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1855,
+          "y": 923,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_471c73",
+          "type": "Adventure",
+          "name": "No Safe Distance",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2175,
+          "y": 932,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7ed9fe",
+          "type": "Adventure",
+          "name": "Poor Reception",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1814,
+          "y": 966,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_8dca73",
+          "type": "Adventure",
+          "name": "Red Legion, Black Oil",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1920,
+          "y": 965,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a9cb7c",
+          "type": "Adventure",
+          "name": "Reversing the Polarity",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2010,
+          "y": 968,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_adeb65",
+          "type": "Adventure",
+          "name": "Stop and Go",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2133,
+          "y": 930,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2e7d20",
+          "type": "Adventure",
+          "name": "Supply and Demand",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1963,
+          "y": 966,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_adc282",
+          "type": "Adventure",
+          "name": "Unsafe At Any Speed",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2133,
+          "y": 969,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4301f1",
+          "type": "Adventure",
+          "name": "WANTED: Silent Fang",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1966,
+          "y": 928,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_612545",
+          "type": "Landing Zone",
+          "name": "The Farm",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2140,
+          "y": 710,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_cbb0bb",
+          "type": "Story",
+          "name": "Shard of the Traveler",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Gain your new Powers, Guardian.",
+          "portrait": "",
+          "x": 1495,
+          "y": 866,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen",
+            "Taken"
+          ],
+          "bosses": [
+            "Brandaks Prime",
+            "Graviton Burner",
+            "Poknis - Order Captain",
+            "Drensik - Venom of Oryx",
+            "Gu'urc - Venom of Oryx",
+            "Haraal - Venom of Oryx"
+          ]
         }
       ],
       "director": {
         "bodyKey": "earth",
         "orbital": false,
-        "stackOrder": -2
+        "stackOrder": -2,
+        "nodeType": "Location"
       },
       "ui": {
         "labelBorder": false
@@ -725,8 +1122,8 @@
         {
           "id": "lbl_eda752",
           "text": "The Tunnels",
-          "x": 903,
-          "y": 659,
+          "x": 884,
+          "y": 657,
           "boxed": false
         },
         {
@@ -774,42 +1171,6 @@
       ]
     },
     {
-      "id": "moon",
-      "name": "Moon",
-      "subtitle": "Luna",
-      "map": {
-        "image": "assets/maps/E93AC280.png",
-        "width": 3200,
-        "height": 2000
-      },
-      "nodes": [
-        {
-          "id": "moon_dungeon",
-          "type": "Dungeon",
-          "name": "Pit of Heresy",
-          "x": 1146,
-          "y": 2367,
-          "size": 26,
-          "enabled": true,
-          "description": "Endgame activity."
-        },
-        {
-          "id": "moon_raid",
-          "type": "Raid",
-          "name": "Crota's End",
-          "x": 969,
-          "y": 2765,
-          "size": 28,
-          "enabled": true,
-          "description": "Locked / disabled example."
-        }
-      ],
-      "director": {
-        "bodyKey": "moon",
-        "orbital": false
-      }
-    },
-    {
       "id": "cosmodrome",
       "name": "Cosmodrome",
       "subtitle": "Old Russia",
@@ -818,12 +1179,184 @@
         "width": 3200,
         "height": 2000
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "id": "node_3dd161",
+          "type": "Vendor",
+          "name": "Shaw Han",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A skilled Hunter, Shaw leads fireteams on dangerous missions throughout the solar system.",
+          "portrait": "",
+          "x": 940,
+          "y": 2218,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ad747e",
+          "type": "Landing Zone",
+          "name": "The Steppes",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1021,
+          "y": 2304,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b3d702",
+          "type": "Lost Sector",
+          "name": "Exodus Garden 2A",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1367,
+          "y": 2632,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0fb814",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 946,
+          "y": 2075,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_f67194",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 597,
+          "y": 1399,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_9eb3f1",
+          "type": "Dungeon",
+          "name": "Grasp of Avarice",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A cautionary tale for adventurers willing to trade their humanity for riches.",
+          "portrait": "",
+          "x": 1101,
+          "y": 527,
+          "size": 48,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_fa620b",
+          "type": "Landing Zone",
+          "name": "Skywatch",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1568,
+          "y": 599,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
       "director": {
         "bodyKey": "earth",
         "orbital": false,
-        "stackOrder": -1
-      }
+        "stackOrder": -1,
+        "nodeType": "Location"
+      },
+      "labels": [
+        {
+          "id": "lbl_c4d492",
+          "text": "Cosmodrome",
+          "x": 1550,
+          "y": 1876,
+          "boxed": true
+        },
+        {
+          "id": "lbl_8477d4",
+          "text": "Dock 13",
+          "x": 1345,
+          "y": 2328,
+          "boxed": false
+        },
+        {
+          "id": "lbl_40a14c",
+          "text": "The Steppes",
+          "x": 832,
+          "y": 1969,
+          "boxed": false
+        },
+        {
+          "id": "lbl_775a91",
+          "text": "The Breach",
+          "x": 749,
+          "y": 3069,
+          "boxed": false
+        },
+        {
+          "id": "lbl_9a1d1c",
+          "text": "Gateway",
+          "x": 236,
+          "y": 2639,
+          "boxed": false
+        },
+        {
+          "id": "lbl_0d8399",
+          "text": "The Divide",
+          "x": 866,
+          "y": 2562,
+          "boxed": false
+        },
+        {
+          "id": "lbl_ddda62",
+          "text": "Mothyards",
+          "x": 682,
+          "y": 1505,
+          "boxed": false
+        },
+        {
+          "id": "lbl_be6372",
+          "text": "Lunar Complex",
+          "x": 938,
+          "y": 728,
+          "boxed": false
+        },
+        {
+          "id": "lbl_97f631",
+          "text": "Skywatch",
+          "x": 1349,
+          "y": 662,
+          "boxed": false
+        }
+      ]
     },
     {
       "id": "tower",
@@ -837,47 +1370,20 @@
       "nodes": [],
       "director": {
         "bodyKey": "earth",
-        "orbital": false
-      }
-    },
-    {
-      "id": "old_tower",
-      "name": "The Old Tower",
-      "subtitle": "Legacy",
-      "map": {
-        "image": "assets/maps/old_tower.png",
-        "width": 2400,
-        "height": 1600
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Location"
       },
-      "nodes": [],
-      "director": {
-        "bodyKey": "earth",
-        "orbital": false
-      }
-    },
-    {
-      "id": "farm",
-      "name": "The Farm",
-      "subtitle": "European Dead Zone",
-      "map": {
-        "image": "assets/maps/farm.png",
-        "width": 2400,
-        "height": 1600
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "earth",
-        "orbital": false
-      }
+      "labels": []
     },
     {
       "id": "moon_721214",
       "name": "Leviathan",
-      "subtitle": "Orbit near mercury",
+      "subtitle": "",
       "map": {
-        "image": "assets/maps/moon.png",
-        "width": 3000,
-        "height": 2000
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
       },
       "nodes": [],
       "director": {
@@ -885,27 +1391,203 @@
         "orbital": true,
         "dx": 0,
         "dy": -1,
-        "stackOrder": 0
+        "stackOrder": 1,
+        "nodeType": "Location"
       },
       "labels": []
     },
     {
       "id": "mercury_27cd71",
-      "name": "Mercury",
-      "subtitle": "Linked to mercury",
+      "name": "Caloris Basin",
+      "subtitle": "Field of Glass",
       "map": {
-        "image": "",
-        "width": 3000,
-        "height": 2000
+        "image": "assets\\maps\\2C3BC280.png",
+        "width": 0,
+        "height": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "id": "node_37bee9",
+          "type": "Strike",
+          "name": "A Garden World",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1163,
+          "y": 1060,
+          "size": 96,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2b2bd0",
+          "type": "Strike",
+          "name": "Tree of Probabilities",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1110,
+          "y": 773,
+          "size": 96,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_bca819",
+          "type": "Adventure",
+          "name": "Bug in the System",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1566,
+          "y": 1436,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_01f30b",
+          "type": "Adventure",
+          "name": "The Up and Up",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1751,
+          "y": 1436,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e9e5ba",
+          "type": "Adventure",
+          "name": "The Runner",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1660,
+          "y": 1552,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e81ae0",
+          "type": "Adventure",
+          "name": "WANTED: Combuster Valus",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1660,
+          "y": 1312,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_400d4e",
+          "type": "World Event",
+          "name": "Legends Lost",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1661,
+          "y": 1647,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a1bd84",
+          "type": "Landing Zone",
+          "name": "The Lighthouse",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1765,
+          "y": 1202,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b2aa78",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1661,
+          "y": 1436,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_70b102",
+          "type": "Lost Sector",
+          "name": "Pariah's Refuge",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1802,
+          "y": 1515,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
       "director": {
         "bodyKey": "mercury",
         "orbital": false,
         "dx": 0,
         "dy": -1,
-        "stackOrder": 0
-      }
+        "stackOrder": 0,
+        "nodeType": "Location"
+      },
+      "labels": [
+        {
+          "id": "lbl_9244b8",
+          "text": "FIELD OF GLASS",
+          "x": 1585,
+          "y": 995,
+          "boxed": true
+        },
+        {
+          "id": "lbl_06632a",
+          "text": "The Lighthouse",
+          "x": 1579,
+          "y": 1218,
+          "boxed": false
+        },
+        {
+          "id": "lbl_d1fc9a",
+          "text": "Infinite Forest",
+          "x": 1576,
+          "y": 1683,
+          "boxed": false
+        }
+      ]
     },
     {
       "id": "mars_e31831",
@@ -922,7 +1604,8 @@
         "orbital": false,
         "dx": 0,
         "dy": -1,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Location"
       }
     },
     {
@@ -940,46 +1623,31 @@
         "orbital": true,
         "dx": 0,
         "dy": -1,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Location"
       }
     },
     {
       "id": "loc_97a6fc",
-      "name": "IO",
+      "name": "Io",
       "subtitle": "",
       "map": {
-        "image": "",
+        "image": "assets\\maps\\4039C280.png",
         "width": 0,
         "height": 0
       },
       "nodes": [],
       "labels": [],
       "director": {
-        "bodyKey": "io",
-        "orbital": false,
-        "stackOrder": 0
-      }
-    },
-    {
-      "id": "loc_fe3a01",
-      "name": "Moon",
-      "subtitle": "",
-      "map": {
-        "image": "",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "labels": [],
-      "director": {
-        "bodyKey": "earth",
+        "bodyKey": "jupiter",
         "orbital": true,
-        "stackOrder": 0
+        "stackOrder": -1,
+        "nodeType": "Moon"
       }
     },
     {
       "id": "loc_1ebdaf",
-      "name": "TITAN",
+      "name": "Titan",
       "subtitle": "",
       "map": {
         "image": "assets/maps/F738C280.png",
@@ -991,7 +1659,8 @@
       "director": {
         "bodyKey": "saturn",
         "orbital": true,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Moon"
       }
     },
     {
@@ -1008,24 +1677,8 @@
       "director": {
         "bodyKey": "venus",
         "orbital": false,
-        "stackOrder": 0
-      }
-    },
-    {
-      "id": "loc_40501f",
-      "name": "Selina Morass",
-      "subtitle": "",
-      "map": {
-        "image": "",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "labels": [],
-      "director": {
-        "bodyKey": "venus",
-        "orbital": false,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Location"
       }
     },
     {
@@ -1042,14 +1695,15 @@
       "director": {
         "bodyKey": "body_9d32",
         "orbital": true,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Location"
       }
     },
     {
       "id": "loc_615175",
       "name": "The Dreaming City",
       "subtitle": "",
-      "map": { 
+      "map": {
         "image": "assets/maps/6535C280.png",
         "width": 0,
         "height": 0
@@ -1059,7 +1713,8 @@
       "director": {
         "bodyKey": "body_9d32",
         "orbital": false,
-        "stackOrder": 1
+        "stackOrder": 1,
+        "nodeType": "Location"
       }
     },
     {
@@ -1067,7 +1722,7 @@
       "name": "Prison of Elders",
       "subtitle": "",
       "map": {
-        "image": "",
+        "image": "assets\\bg\\4838C280.png",
         "width": 0,
         "height": 0
       },
@@ -1076,7 +1731,8 @@
       "director": {
         "bodyKey": "body_9d32",
         "orbital": true,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Activity"
       }
     },
     {
@@ -1093,7 +1749,443 @@
       "director": {
         "bodyKey": "body_9d32",
         "orbital": false,
-        "stackOrder": 0
+        "stackOrder": 0,
+        "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_6b7492",
+      "name": "Moon",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\E93AC280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "earth",
+        "orbital": true,
+        "stackOrder": 0,
+        "nodeType": "Moon"
+      }
+    },
+    {
+      "id": "loc_1526d8",
+      "name": "Savathun's Throne World",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\EB38C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": false,
+        "stackOrder": 1,
+        "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_4c9e12",
+      "name": "The Last City",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\7835C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "earth",
+        "orbital": false,
+        "stackOrder": -2,
+        "nodeType": "Location"
+      },
+      "labels": []
+    },
+    {
+      "id": "loc_81a7f9",
+      "name": "The Pale Heart",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\6840C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "earth",
+        "orbital": true,
+        "stackOrder": -1,
+        "nodeType": "Moon"
+      }
+    },
+    {
+      "id": "loc_aad29a",
+      "name": "Keplar",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\3240C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "body_cecd",
+        "orbital": true,
+        "stackOrder": 0,
+        "nodeType": "Moon"
+      }
+    },
+    {
+      "id": "loc_4e7dbe",
+      "name": "Europa",
+      "subtitle": "Moon",
+      "map": {
+        "image": "assets\\maps\\013BC280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "jupiter",
+        "orbital": true,
+        "stackOrder": 0,
+        "nodeType": "Moon"
+      },
+      "labels": []
+    },
+    {
+      "id": "loc_9c3bae",
+      "name": "Mars Moins",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\5A34C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": false,
+        "stackOrder": 3,
+        "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_6a45b3",
+      "name": "Neomuna",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\4E35C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "neptune",
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_046c36",
+      "name": "Xur's Dominion",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [
+        {
+          "id": "node_3d592c",
+          "type": "Landing Zone",
+          "name": "Treasure Hoard",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1195,
+          "y": 670,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_604987",
+          "type": "Dungeon",
+          "name": "Prophecy",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 837,
+          "y": 762,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_f2c9da",
+          "type": "Strike",
+          "name": "Dares of Eternity",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1540,
+          "y": 771,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "director": {
+        "bodyKey": "body_51eb",
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Location"
+      },
+      "labels": []
+    },
+    {
+      "id": "loc_f73a59",
+      "name": "The Third Spire",
+      "subtitle": "The Rite of the Nine",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [
+        {
+          "id": "node_e05b96",
+          "type": "Landing Zone",
+          "name": "The Third Spire",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1204,
+          "y": 839,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e38707",
+          "type": "Dungeon",
+          "name": "Spire of the Watcher",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1198,
+          "y": 448,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_533ac4",
+          "type": "Dungeon",
+          "name": "Ghost of the Deep",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1592,
+          "y": 666,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4d9697",
+          "type": "Dungeon",
+          "name": "Prophecy",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 784,
+          "y": 668,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "director": {
+        "bodyKey": "body_51eb",
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Location"
+      },
+      "labels": []
+    },
+    {
+      "id": "loc_a25ffe",
+      "name": "The Red War",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 3000,
+        "height": 2000
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "earth",
+        "orbital": false,
+        "stackOrder": -5,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_c10bdc",
+      "name": "Curse of Osiris",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mercury",
+        "orbital": false,
+        "stackOrder": -5,
+        "nodeType": "Activity"
+      },
+      "labels": []
+    },
+    {
+      "id": "loc_3e2aa8",
+      "name": "Warmind",
+      "subtitle": "",
+      "map": {
+        "image": "",
+        "width": 3000,
+        "height": 2000
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": false,
+        "stackOrder": -5,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_6665c7",
+      "name": "Forsaken",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 3000,
+        "height": 2000
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "body_9d32",
+        "orbital": false,
+        "stackOrder": -5,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_f75ae1",
+      "name": "Shadowkeep",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "earth",
+        "orbital": true,
+        "stackOrder": -1,
+        "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_20de6f",
+      "name": "Beyond Light",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "jupiter",
+        "orbital": true,
+        "stackOrder": -1,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_c0cc81",
+      "name": "The Witch Queen",
+      "subtitle": "",
+      "map": {
+        "image": "",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_644c95",
+      "name": "Lightfall",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\bg\\4838C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "neptune",
+        "orbital": false,
+        "stackOrder": -1,
+        "nodeType": "Activity"
+      }
+    },
+    {
+      "id": "loc_af8ae4",
+      "name": "The Lawless Frontier",
+      "subtitle": "",
+      "map": {
+        "image": "",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": true,
+        "stackOrder": 0,
+        "nodeType": "Location"
       }
     }
   ]
