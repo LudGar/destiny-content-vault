@@ -1,4 +1,3 @@
-// app.js
 import { loadAllData, saveUniverseJson, getThemeFromCatalog } from "./js/storage.js";
 import { initTooltip, hideTooltip } from "./js/tooltip.js";
 import { renderDirector } from "./js/director.js";
@@ -8,7 +7,6 @@ const stageEl = document.getElementById("stage");
 const tooltipEl = document.getElementById("tooltip");
 const crumbsEl = document.getElementById("crumbs");
 const brandBtn = document.getElementById("brandBtn");
-const toggleEditorBtn = document.getElementById("toggleEditorBtn");
 
 initTooltip(tooltipEl);
 
@@ -120,8 +118,6 @@ window.addEventListener("hashchange", () => window.__APP__?.render?.());
 
 brandBtn.addEventListener("click", () => setRoute({ page: "director" }));
 
-toggleEditorBtn.addEventListener("click", () => {
-  if (window.__EDITOR__?.toggle) window.__EDITOR__.toggle();
   else alert("Editor not available (read-only build).");
 });
 
