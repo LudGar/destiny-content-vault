@@ -230,7 +230,7 @@
       "name": "EUROPEAN DEAD ZONE",
       "subtitle": "EDZ",
       "map": {
-        "image": "assets/maps/edz.png",
+        "image": "assets/maps/2639C280.png",
         "width": 3500,
         "height": 2333
       },
@@ -394,7 +394,14 @@
           "x": 595,
           "y": 1196,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Servitor"
+          ]
         },
         {
           "id": "node_33e8d5",
@@ -541,7 +548,11 @@
           "x": 578,
           "y": 1405,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": []
         },
         {
           "id": "node_550bf1",
@@ -562,12 +573,14 @@
           "name": "The Arms Dealer",
           "subtitle": "",
           "subtext": "",
-          "description": "",
+          "description": "Stifle the legacy of a notorious ironmonger providing weapons to the Shadow Legion.",
           "portrait": "",
           "x": 634,
           "y": 1034,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
         },
         {
           "id": "node_c8fde1",
@@ -649,8 +662,8 @@
         {
           "id": "lbl_631fed",
           "text": "The Gulch",
-          "x": 1070,
-          "y": 1054,
+          "x": 1062,
+          "y": 1067,
           "boxed": false
         },
         {
@@ -765,7 +778,7 @@
       "name": "Moon",
       "subtitle": "Luna",
       "map": {
-        "image": "assets/maps/moon.png",
+        "image": "assets/maps/E93AC280.png",
         "width": 3200,
         "height": 2000
       },
@@ -801,7 +814,7 @@
       "name": "Cosmodrome",
       "subtitle": "Old Russia",
       "map": {
-        "image": "assets/maps/cosmodrome.png",
+        "image": "assets/maps/B539C280.png",
         "width": 3200,
         "height": 2000
       },
@@ -817,7 +830,7 @@
       "name": "The Tower",
       "subtitle": "Last City",
       "map": {
-        "image": "assets/maps/the_tower.png",
+        "image": "assets/maps/AD3AC280.png",
         "width": 2400,
         "height": 1600
       },
@@ -969,7 +982,7 @@
       "name": "TITAN",
       "subtitle": "",
       "map": {
-        "image": "assets/maps/titan.png",
+        "image": "assets/maps/F738C280.png",
         "width": 0,
         "height": 0
       },
@@ -1036,8 +1049,8 @@
       "id": "loc_615175",
       "name": "The Dreaming City",
       "subtitle": "",
-      "map": {
-        "image": "",
+      "map": { 
+        "image": "assets/maps/6535C280.png",
         "width": 0,
         "height": 0
       },
@@ -1071,7 +1084,7 @@
       "name": "Tangled Shore",
       "subtitle": "",
       "map": {
-        "image": "",
+        "image": "assets/maps/D93BC280.png",
         "width": 0,
         "height": 0
       },
