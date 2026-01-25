@@ -70,10 +70,6 @@ Defines:
 
 ---
 
-## Project Structure
-
----
-
 ## Rendering Details
 
 ### Director
