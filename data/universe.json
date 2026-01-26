@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": 1,
-    "title": "Destiny Community Vault"
+    "title": "Destiny Universe (Prototype)"
   },
   "solSystem": {
     "bodies": [
@@ -20,8 +20,7 @@
         "kind": "planet",
         "locations": [
           "vaulted_mercury",
-          "mercury_27cd71",
-          "loc_c10bdc"
+          "mercury_27cd71"
         ],
         "icon": "assets\\icons\\DC7D0A81.png",
         "color": "#78BEFF",
@@ -49,9 +48,7 @@
           "moon_721214",
           "loc_6b7492",
           "loc_4c9e12",
-          "loc_81a7f9",
-          "loc_a25ffe",
-          "loc_f75ae1"
+          "loc_81a7f9"
         ],
         "icon": "assets\\icons\\E77D0A81.png",
         "color": "#78BEFF",
@@ -63,12 +60,10 @@
         "kind": "planet",
         "locations": [
           "vaulted_mars",
-          "mars_e31831",
           "loc_1526d8",
           "loc_9c3bae",
-          "loc_3e2aa8",
-          "loc_c0cc81",
-          "loc_af8ae4"
+          "loc_af8ae4",
+          "loc_fe90e5"
         ],
         "icon": "assets\\icons\\E47D0A81.png",
         "color": "#78BEFF",
@@ -82,8 +77,7 @@
           "loc_e6e2ee",
           "loc_615175",
           "loc_8660ec",
-          "loc_43e199",
-          "loc_6665c7"
+          "loc_43e199"
         ],
         "icon": "",
         "color": "#658",
@@ -95,8 +89,7 @@
         "kind": "planet",
         "locations": [
           "loc_97a6fc",
-          "loc_4e7dbe",
-          "loc_20de6f"
+          "loc_4e7dbe"
         ],
         "icon": "assets\\icons\\FE7D0A81.png",
         "color": "#78BEFF",
@@ -115,6 +108,17 @@
         "size": 0
       },
       {
+        "key": "body_fd9c",
+        "label": "Nessus",
+        "kind": "planet",
+        "color": "#78BEFF",
+        "icon": "",
+        "size": 0,
+        "locations": [
+          "loc_f7ca2e"
+        ]
+      },
+      {
         "key": "uranus",
         "label": "Uranus (VII)",
         "kind": "planet",
@@ -129,8 +133,7 @@
         "kind": "planet",
         "locations": [
           "neomuna",
-          "loc_6a45b3",
-          "loc_644c95"
+          "loc_6a45b3"
         ],
         "icon": "assets\\icons\\F27D0A81.png",
         "color": "#78BEFF",
@@ -262,7 +265,13 @@
           "y": 1700,
           "size": 22,
           "enabled": true,
-          "description": "Free-roam activities, bounties, public events."
+          "description": "Free-roam activities, bounties, public events.",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Downpour Captain"
+          ]
         },
         {
           "id": "edz_strike",
@@ -307,7 +316,14 @@
           "x": 1662,
           "y": 1528,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Lost Captain"
+          ]
         },
         {
           "id": "node_821404",
@@ -316,7 +332,14 @@
           "x": 1730,
           "y": 1523,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Outkast Captain"
+          ]
         },
         {
           "id": "node_6ad153",
@@ -325,7 +348,14 @@
           "x": 1760,
           "y": 1491,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Sunless Captain"
+          ]
         },
         {
           "id": "node_e2249e",
@@ -346,7 +376,14 @@
           "x": 1633,
           "y": 1145,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Calzar - Scarred Captain"
+          ]
         },
         {
           "id": "node_e35ca7",
@@ -365,7 +402,14 @@
           "x": 1455,
           "y": 1170,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Taken"
+          ],
+          "bosses": [
+            "Varghul - Fragment of Oryx"
+          ]
         },
         {
           "id": "node_dee6ce",
@@ -374,7 +418,14 @@
           "x": 1370,
           "y": 1059,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Taken"
+          ],
+          "bosses": [
+            "Vendraxis - Shadow of Oryx"
+          ]
         },
         {
           "id": "node_01f84d",
@@ -490,7 +541,14 @@
           "x": 1072,
           "y": 1235,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "description": "",
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Phyzann - Drowned Captain"
+          ]
         },
         {
           "id": "node_e136a7",
@@ -522,7 +580,13 @@
           "x": 1537,
           "y": 1673,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Blind Captain"
+          ]
         },
         {
           "id": "node_82e4d7",
@@ -535,7 +599,13 @@
           "x": 1409,
           "y": 1735,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Metal Captain"
+          ]
         },
         {
           "id": "node_2a5fcd",
@@ -548,7 +618,13 @@
           "x": 1224,
           "y": 1639,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Drained Captain"
+          ]
         },
         {
           "id": "node_545f61",
@@ -561,7 +637,13 @@
           "x": 742,
           "y": 1369,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Zerz - The Unstoppable Weight"
+          ]
         },
         {
           "id": "node_bb06d7",
@@ -591,7 +673,13 @@
           "x": 794,
           "y": 1245,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Dust Choked Thrag"
+          ]
         },
         {
           "id": "node_5903c9",
@@ -619,7 +707,13 @@
           "x": 655,
           "y": 530,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Fortifier Yann"
+          ]
         },
         {
           "id": "node_845854",
@@ -632,7 +726,13 @@
           "x": 372,
           "y": 609,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Devourer Darg"
+          ]
         },
         {
           "id": "node_e1bbbd",
@@ -645,7 +745,13 @@
           "x": 482,
           "y": 1195,
           "size": 22,
-          "enabled": true
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Kurg the All-Seeing Force"
+          ]
         },
         {
           "id": "node_e4150b",
@@ -893,8 +999,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 1814,
-          "y": 966,
+          "x": 1672,
+          "y": 1633,
           "size": 22,
           "enabled": true,
           "enemies": [],
@@ -923,8 +1029,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 2010,
-          "y": 968,
+          "x": 1480,
+          "y": 1839,
           "size": 22,
           "enabled": true,
           "enemies": [],
@@ -998,8 +1104,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 2140,
-          "y": 710,
+          "x": 1839,
+          "y": 718,
           "size": 128,
           "enabled": true,
           "enemies": [],
@@ -1029,6 +1135,246 @@
             "Gu'urc - Venom of Oryx",
             "Haraal - Venom of Oryx"
           ]
+        },
+        {
+          "id": "node_d14512",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 515,
+          "y": 376,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_97856b",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 404,
+          "y": 647,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_30e17b",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 338,
+          "y": 657,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2a56c0",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 635,
+          "y": 1258,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_70201c",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1043,
+          "y": 1271,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_281d08",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 492,
+          "y": 1248,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d9a983",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1085,
+          "y": 946,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_640c43",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1404,
+          "y": 1230,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0f3d25",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1661,
+          "y": 1075,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a03b09",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1593,
+          "y": 1133,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7a726d",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 835,
+          "y": 1547,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_07e389",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 921,
+          "y": 1536,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b8c30b",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 822,
+          "y": 1462,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c2574e",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1413,
+          "y": 1618,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_df8711",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1285,
+          "y": 1722,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_442092",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1521,
+          "y": 1614,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
         }
       ],
       "director": {
@@ -1201,7 +1547,7 @@
           "name": "The Steppes",
           "subtitle": "",
           "subtext": "",
-          "description": "",
+          "description": "Scour the Old Russian stronghold on Earth to protect the City's interests.\n\nTravel to the Steppes.",
           "portrait": "",
           "x": 1021,
           "y": 2304,
@@ -1276,11 +1622,429 @@
           "name": "Skywatch",
           "subtitle": "",
           "subtext": "",
+          "description": "Travel to the Skywatch.",
+          "portrait": "",
+          "x": 1573,
+          "y": 617,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c4e07a",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 1568,
-          "y": 599,
+          "x": 976,
+          "y": 1322,
           "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d43251",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 994,
+          "y": 1924,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_910917",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1385,
+          "y": 625,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4c5368",
+          "type": "Strike",
+          "name": "The Devils' Lair",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Fallen House of Devils in the Cosmodrome sustains its strength through a single Servitor Known as Sepiks Prime. Find where this keeper of souls lies and destroy him.\n\nEnter into the Devil's Lair and weaken the Fallen presence within the Cosmodrome.",
+          "portrait": "",
+          "x": 1589,
+          "y": 1761,
+          "size": 96,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c50b78",
+          "type": "Lost Sector",
+          "name": "Veles Labyrinth",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2250,
+          "y": 1614,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Hive"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_05005f",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2217,
+          "y": 1325,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0a2179",
+          "type": "Strike",
+          "name": "The Disgraced",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Defeat the shamed Hive Wizard Navôta in the Cosmodrome.",
+          "portrait": "",
+          "x": 2455,
+          "y": 1220,
+          "size": 96,
+          "enabled": true,
+          "enemies": [
+            "Fallen",
+            "Hive"
+          ],
+          "bosses": [
+            "Navôta"
+          ]
+        },
+        {
+          "id": "node_0a1bbc",
+          "type": "Strike",
+          "name": "Fallen S.A.B.E.R.",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Rush to the Aid of the AI Warmind Rasputin as he broadcasts a plea for help across the system.\n\nEnter Rasputin's bunker in the Cosmodrome and discover the source of the security breach.",
+          "portrait": "",
+          "x": 2572,
+          "y": 1484,
+          "size": 96,
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "S.A.B.E.R. Shank"
+          ]
+        },
+        {
+          "id": "node_8049db",
+          "type": "Story",
+          "name": "Fist of Crota",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Face the Fist of Crota leading the Spawn on Earth.",
+          "portrait": "",
+          "x": 2325,
+          "y": 1424,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Hive"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_22ff50",
+          "type": "Story",
+          "name": "The Warmind",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Break the House of Devil's grasp on the Cosmodrome and secure a vital link to the Golden Age.",
+          "portrait": "",
+          "x": 2133,
+          "y": 1076,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0d45dc",
+          "type": "Story",
+          "name": "A Symbol of Honor",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Explore the past for hints to forge a new Gjallarhorn.",
+          "portrait": "",
+          "x": 2262,
+          "y": 842,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b60e1f",
+          "type": "Strike",
+          "name": "The Will of Crota",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Omnigul, the mastermind of Crota's armies, nests in the Cosmodrome. Eliminate this horror and purge its spawn.",
+          "portrait": "",
+          "x": 2399,
+          "y": 1329,
+          "size": 47,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1a4875",
+          "type": "Story",
+          "name": "Beauty in Delivery",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Assault a Fallen stronghold. Forge your Gjallarhorn.",
+          "portrait": "",
+          "x": 1434,
+          "y": 806,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_916c78",
+          "type": "Story",
+          "name": "The Last Array",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Track down codes to raise an ancient Array and connect it to long-lost colonies throughout the solar system.",
+          "portrait": "",
+          "x": 1557,
+          "y": 533,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4a918b",
+          "type": "Story",
+          "name": "The Dark Within",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Investigate reports of a hidden power trapped in the Cosmodrome Array stations.",
+          "portrait": "",
+          "x": 1145,
+          "y": 928,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_68fb2d",
+          "type": "Story",
+          "name": "Cayde's Stash",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Ascend a colony ship in the Cosmodrome in search of Cayde's lost cache.",
+          "portrait": "",
+          "x": 1282,
+          "y": 1756,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_6e7d10",
+          "type": "Story",
+          "name": "The Silent Fang",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Stop Skolas's elite assassins before they tear through the Cosmodrome.",
+          "portrait": "",
+          "x": 801,
+          "y": 2955,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_98a8e1",
+          "type": "Story",
+          "name": "Restoration",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Return to Fallen territory and hunt for parts to restore your ship's ability for interplanetary travel.",
+          "portrait": "",
+          "x": 1120,
+          "y": 2480,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e68094",
+          "type": "Story",
+          "name": "Blighted Coven",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Investigate the rumors of a Taken coven in the Cosmodrome.",
+          "portrait": "",
+          "x": 986,
+          "y": 2751,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a3a855",
+          "type": "Story",
+          "name": "Kings of Decay",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Hunt the source of the Taken blight across the Cosmodrome.",
+          "portrait": "",
+          "x": 1199,
+          "y": 2886,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ca1221",
+          "type": "Story",
+          "name": "The Promethean Code",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Slip past Rasputin's defenses and download stealth code protocols from his Golden Age database.",
+          "portrait": "",
+          "x": 1882,
+          "y": 2686,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_de8c0b",
+          "type": "Story",
+          "name": "Siege of the Warmind",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Find Rasputin's bunker. Defend it against the Hive attack.",
+          "portrait": "",
+          "x": 2258,
+          "y": 2356,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3d93aa",
+          "type": "Story",
+          "name": "The First Firewall",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Investigate Vault RAS-2 and investigate the source of the strange signal.",
+          "portrait": "",
+          "x": 2372,
+          "y": 1553,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_38234b",
+          "type": "Story",
+          "name": "The Ruling House",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Scour the Cosmodrome for Skolas and the invading Wolves.",
+          "portrait": "",
+          "x": 2467,
+          "y": 2165,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ccae57",
+          "type": "Story",
+          "name": "The Walls come down",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Cosmodrome has been transformed by an ancient threat. Find the source of the corruption.",
+          "portrait": "",
+          "x": 2713,
+          "y": 2025,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4b8e97",
+          "type": "Story",
+          "name": "King of the Mountain",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Lord Saladin has called you to defend an abandoned mountaintop observatory from a Fallen assault",
+          "portrait": "",
+          "x": 2484,
+          "y": 2549,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_53610f",
+          "type": "Location",
+          "name": "Iron Temple",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The ancient fortress of the Iron Lords is alive with activity once more.",
+          "portrait": "",
+          "x": 2838,
+          "y": 2239,
+          "size": 96,
           "enabled": true,
           "enemies": [],
           "bosses": []
@@ -1296,8 +2060,8 @@
         {
           "id": "lbl_c4d492",
           "text": "Cosmodrome",
-          "x": 1550,
-          "y": 1876,
+          "x": 1473,
+          "y": 1920,
           "boxed": true
         },
         {
@@ -1310,8 +2074,8 @@
         {
           "id": "lbl_40a14c",
           "text": "The Steppes",
-          "x": 832,
-          "y": 1969,
+          "x": 842,
+          "y": 1992,
           "boxed": false
         },
         {
@@ -1355,6 +2119,20 @@
           "x": 1349,
           "y": 662,
           "boxed": false
+        },
+        {
+          "id": "lbl_ae147f",
+          "text": "Jovian Complex",
+          "x": 1398,
+          "y": 340,
+          "boxed": false
+        },
+        {
+          "id": "lbl_a83e4b",
+          "text": "Terrestrial Complex",
+          "x": 1710,
+          "y": 651,
+          "boxed": false
         }
       ]
     },
@@ -1367,14 +2145,396 @@
         "width": 2400,
         "height": 1600
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "id": "node_d7f331",
+          "type": "Location",
+          "name": "Shooting Range",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1998,
+          "y": 1224,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_653e35",
+          "type": "Location",
+          "name": "Shaxx's Hideout",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1599,
+          "y": 743,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_131351",
+          "type": "Vendor",
+          "name": "Saint-14",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A legendary hero and the former Titan Vanguard, Saint-14 disappeared into the Infinite Forest only to be later rescued by a fellow Guardian.",
+          "portrait": "",
+          "x": 2559,
+          "y": 1034,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_86a767",
+          "type": "Landing Zone",
+          "name": "Courtyard",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Travel to the Courtyard.",
+          "portrait": "",
+          "x": 1660,
+          "y": 1059,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_f14fb2",
+          "type": "Vendor",
+          "name": "Commander Zavala",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The resolute Commander Zavala advises Guardians on all Vanguard-related activities.",
+          "portrait": "",
+          "x": 1741,
+          "y": 1504,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1b2956",
+          "type": "Vendor",
+          "name": "Ironwood Tree",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Monument to Fellowship",
+          "portrait": "",
+          "x": 1792,
+          "y": 1396,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ff06c4",
+          "type": "Vendor",
+          "name": "Tess Eversi",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Tess Everis is an accomplished broker of stylish and highly coveted items procured from the City and beyond.",
+          "portrait": "",
+          "x": 1774,
+          "y": 1284,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3e4363",
+          "type": "Vendor",
+          "name": "Kadi 55-30",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Postmaster Frames dutifully oversee deliveries, messages, and lost items.",
+          "portrait": "",
+          "x": 1774,
+          "y": 1226,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3eae71",
+          "type": "Vendor",
+          "name": "Quest Archive",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Kiosk to acquire old or abandoned quests.",
+          "portrait": "",
+          "x": 1762,
+          "y": 1154,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_9210a5",
+          "type": "Vendor",
+          "name": "Lord Shaxx",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Crucible is the arena in which Guardians forge their Light. Lord Shaxx is the Crucible.",
+          "portrait": "",
+          "x": 1522,
+          "y": 1441,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7e8fff",
+          "type": "Vendor",
+          "name": "Banshee-44",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Banshee-44 has lived many lives. As master weaponsmith for the Tower, he supplies Guardians with only the best.",
+          "portrait": "",
+          "x": 1523,
+          "y": 1250,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_42a16d",
+          "type": "Vendor",
+          "name": "Master Rahool",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A senior representative of the Cryptarchy, Master Rahool decodes engrams and seeks the treasures of humanity's past.",
+          "portrait": "",
+          "x": 1573,
+          "y": 1143,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2c3762",
+          "type": "Vendor",
+          "name": "Monument to Seasons Past",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Seasonal Archive offers rewards from prior Season and Rewards Passes. Acquire rewards with Chronologs, which are earned from the Rewards Pass or through purchase of an Archived Pass.",
+          "portrait": "",
+          "x": 1590,
+          "y": 1262,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7060f4",
+          "type": "Vendor",
+          "name": "Monument to Lost Lights",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Built to honor of those who sacrificed their Light to defend humanity. Created in collaboration with Cryptarchs to help Guardians manage armaments.",
+          "portrait": "",
+          "x": 1590,
+          "y": 1300,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_26f18e",
+          "type": "Vendor",
+          "name": "Vault",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1590,
+          "y": 1340,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_24c7f8",
+          "type": "Vendor",
+          "name": "Special Deliveries",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Receive special gifts and rewards from various sources.",
+          "portrait": "",
+          "x": 1398,
+          "y": 1261,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a9c617",
+          "type": "Vendor",
+          "name": "Xûr",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A peddler of strange curios, Xûr's motives are not his own. He bows to his distant masters, the Nine.",
+          "portrait": "",
+          "x": 1121,
+          "y": 898,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d51164",
+          "type": "Vendor",
+          "name": "Suraya Hawthrone",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Once a wanderer beyond the City, Suraya Hawthrone now acts as a liaison between humanity and the Guardians.",
+          "portrait": "",
+          "x": 885,
+          "y": 1150,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_31de22",
+          "type": "Vendor",
+          "name": "Ikora Rey",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The wise Ikora Rey aids and advises Guardians in the protection of humanity and beyond.",
+          "portrait": "",
+          "x": 970,
+          "y": 1162,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_9320c2",
+          "type": "Vendor",
+          "name": "The Drifter",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The name says it all.",
+          "portrait": "",
+          "x": 852,
+          "y": 1097,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_16073b",
+          "type": "Vendor",
+          "name": "Ada-1",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Advanced Prototype Exo and warden of the Black Armory.",
+          "portrait": "",
+          "x": 509,
+          "y": 960,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c140e4",
+          "type": "Vendor",
+          "name": "Loom",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A matter programming engine, designed by Ada-1 using Golden Age schematics. Used to create Synthweave for Armor Synthesis.",
+          "portrait": "",
+          "x": 459,
+          "y": 942,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_db3a93",
+          "type": "Landing Zone",
+          "name": "Annex",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Travel to the Annex.",
+          "portrait": "",
+          "x": 749,
+          "y": 1326,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
       "director": {
         "bodyKey": "earth",
         "orbital": false,
         "stackOrder": 0,
         "nodeType": "Location"
       },
-      "labels": []
+      "labels": [
+        {
+          "id": "lbl_1feda1",
+          "text": "Annex",
+          "x": 515,
+          "y": 1147,
+          "boxed": false
+        },
+        {
+          "id": "lbl_c0f7c6",
+          "text": "Bazaar",
+          "x": 907,
+          "y": 899,
+          "boxed": false
+        },
+        {
+          "id": "lbl_646d4d",
+          "text": "Courtyard",
+          "x": 1389,
+          "y": 1007,
+          "boxed": false
+        },
+        {
+          "id": "lbl_b0485e",
+          "text": "Hangar",
+          "x": 2150,
+          "y": 944,
+          "boxed": false
+        },
+        {
+          "id": "lbl_923668",
+          "text": "Tower",
+          "x": 1636,
+          "y": 1694,
+          "boxed": true
+        }
+      ]
     },
     {
       "id": "moon_721214",
@@ -1414,8 +2574,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 1163,
-          "y": 1060,
+          "x": 1341,
+          "y": 1623,
           "size": 96,
           "enabled": true,
           "enemies": [],
@@ -1429,8 +2589,8 @@
           "subtext": "",
           "description": "",
           "portrait": "",
-          "x": 1110,
-          "y": 773,
+          "x": 1332,
+          "y": 1166,
           "size": 96,
           "enabled": true,
           "enemies": [],
@@ -1520,7 +2680,7 @@
           "description": "",
           "portrait": "",
           "x": 1765,
-          "y": 1202,
+          "y": 1194,
           "size": 22,
           "enabled": true,
           "enemies": [],
@@ -1555,6 +2715,21 @@
           "enabled": true,
           "enemies": [],
           "bosses": []
+        },
+        {
+          "id": "node_16c293",
+          "type": "Vendor",
+          "name": "Brother Vance",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1660,
+          "y": 1176,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
         }
       ],
       "director": {
@@ -1569,8 +2744,8 @@
         {
           "id": "lbl_9244b8",
           "text": "FIELD OF GLASS",
-          "x": 1585,
-          "y": 995,
+          "x": 2308,
+          "y": 1197,
           "boxed": true
         },
         {
@@ -1583,30 +2758,11 @@
         {
           "id": "lbl_d1fc9a",
           "text": "Infinite Forest",
-          "x": 1576,
-          "y": 1683,
+          "x": 1585,
+          "y": 1703,
           "boxed": false
         }
       ]
-    },
-    {
-      "id": "mars_e31831",
-      "name": "mars",
-      "subtitle": "Linked to mars",
-      "map": {
-        "image": "",
-        "width": 3000,
-        "height": 2000
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "mars",
-        "orbital": false,
-        "dx": 0,
-        "dy": -1,
-        "stackOrder": 0,
-        "nodeType": "Location"
-      }
     },
     {
       "id": "saturn_c5e72f",
@@ -1654,8 +2810,399 @@
         "width": 0,
         "height": 0
       },
-      "nodes": [],
-      "labels": [],
+      "nodes": [
+        {
+          "id": "node_dba344",
+          "type": "Dungeon",
+          "name": "Ghost of the Deep",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2292,
+          "y": 681,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3bb712",
+          "type": "Other events",
+          "name": "Gold Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 909,
+          "y": 748,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4b539f",
+          "type": "Other events",
+          "name": "Gold Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 967,
+          "y": 687,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_dead57",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 961,
+          "y": 589,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0a35ea",
+          "type": "Lost Sector",
+          "name": "Methane Flush",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1039,
+          "y": 589,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_fd04ba",
+          "type": "Lost Sector",
+          "name": "Cargo Bay 3",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1341,
+          "y": 716,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_cbcffc",
+          "type": "Lost Sector",
+          "name": "DS Quarters-2",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1300,
+          "y": 795,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_818b07",
+          "type": "Landing Zone",
+          "name": "Siren's Watch",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 995,
+          "y": 546,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_15a1f6",
+          "type": "Landing Zone",
+          "name": "The Rig",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1225,
+          "y": 741,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_6c5787",
+          "type": "Adventure",
+          "name": "Thief of Thieves",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1501,
+          "y": 795,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7c8442",
+          "type": "Adventure",
+          "name": "Bad Neighbors",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1295,
+          "y": 749,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a71655",
+          "type": "Adventure",
+          "name": "Siren Song",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 993,
+          "y": 631,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_de04c6",
+          "type": "Vendor",
+          "name": "Commander Sloane",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 934,
+          "y": 548,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d5ce57",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1441,
+          "y": 891,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d88041",
+          "type": "Story",
+          "name": "Hope",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Commander Zavala is building a resistance at a moon of Saturn. Make contact and join the fight",
+          "portrait": "",
+          "x": 242,
+          "y": 265,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_aa66fd",
+          "type": "Story",
+          "name": "Riptide",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Without power, Zavala's resistance has hit a wall. Travel deeper into the Arcology and help them past it.",
+          "portrait": "",
+          "x": 909,
+          "y": 597,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen",
+            "Hive"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_fdd2ed",
+          "type": "Story",
+          "name": "Utopia",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Venture deeep into the heart of the Hive to retrieve a powerful Golden Age CPU - and make it out alive",
+          "portrait": "",
+          "x": 1440,
+          "y": 787,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1a0e0e",
+          "type": "Challenge",
+          "name": "Ace in the Hole",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1687,
+          "y": 794,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Hive - Savathûn's Brood"
+          ],
+          "bosses": [
+            "Posthüm of the Deep",
+            "Yulog of the Deep"
+          ]
+        },
+        {
+          "id": "node_10b217",
+          "type": "Strike",
+          "name": "Savathûn's Song",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Delve deep into the Hive-infested Arcology in search of missing fireteams.",
+          "portrait": "",
+          "x": 1793,
+          "y": 375,
+          "size": 128,
+          "enabled": true,
+          "enemies": [
+            "Hive - Savathûn's Brood"
+          ],
+          "bosses": [
+            "Hungering Ogre",
+            "Nydor - Arbiter",
+            "Hadaa - Arbiter",
+            "Osmium Traitor",
+            "Savathûn's Song",
+            "Sardev - Arbiter",
+            "Telesh - Arbiter"
+          ]
+        },
+        {
+          "id": "node_7a8715",
+          "type": "Adventure",
+          "name": "Deathless",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 704,
+          "y": 727,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_85251e",
+          "type": "Adventure",
+          "name": "WANTED: Gravetide Summoner",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1232,
+          "y": 939,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "labels": [
+        {
+          "id": "lbl_7a063a",
+          "text": "Sinking Docks",
+          "x": 246,
+          "y": 581,
+          "boxed": false
+        },
+        {
+          "id": "lbl_b21641",
+          "text": "Siren's Watch",
+          "x": 880,
+          "y": 713,
+          "boxed": false
+        },
+        {
+          "id": "lbl_8afd72",
+          "text": "New Pacific Arcology",
+          "x": 757,
+          "y": 994,
+          "boxed": true
+        },
+        {
+          "id": "lbl_3e5100",
+          "text": "Tidal Anchor",
+          "x": 924,
+          "y": 1173,
+          "boxed": false
+        },
+        {
+          "id": "lbl_afdd7e",
+          "text": "Solarium",
+          "x": 1813,
+          "y": 677,
+          "boxed": false
+        },
+        {
+          "id": "lbl_3954d5",
+          "text": "Arboretum",
+          "x": 1983,
+          "y": 338,
+          "boxed": false
+        },
+        {
+          "id": "lbl_af9b2e",
+          "text": "The Festering Halls",
+          "x": 2080,
+          "y": 1014,
+          "boxed": false
+        },
+        {
+          "id": "lbl_8c7ea5",
+          "text": "The Rig",
+          "x": 1303,
+          "y": 821,
+          "boxed": false
+        }
+      ],
       "director": {
         "bodyKey": "saturn",
         "orbital": true,
@@ -1668,12 +3215,344 @@
       "name": "Ishtar Sink",
       "subtitle": "",
       "map": {
-        "image": "",
+        "image": "assets\\maps\\old\\VENUS.png",
         "width": 0,
         "height": 0
       },
-      "nodes": [],
-      "labels": [],
+      "nodes": [
+        {
+          "id": "node_7dcd56",
+          "type": "Story",
+          "name": "Ishtar Collective",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Unravel the secrets of the Vex by reviving an ancient research station of the Ishtar Collective.",
+          "portrait": "",
+          "x": 3053,
+          "y": 1891,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_c47ecf",
+          "type": "Story",
+          "name": "Paradox",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Investigate the signal coming from the Vault of Glass.",
+          "portrait": "",
+          "x": 2991,
+          "y": 1727,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_c76d79",
+          "type": "Raid",
+          "name": "Vault of Glass",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Beneath Venus, evil stirs.",
+          "portrait": "",
+          "x": 2815,
+          "y": 1823,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": [
+            "The Templar",
+            "Atheon"
+          ]
+        },
+        {
+          "id": "node_e987f5",
+          "type": "Story",
+          "name": "The Archive",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Find the Collective's lost Archive, sealed for centuries, in a vault deep beneath the Ishtar Academy.",
+          "portrait": "",
+          "x": 2600,
+          "y": 1829,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_994fe1",
+          "type": "Story",
+          "name": "A Stranger's Call",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Follow the Stranger's coordinates to a legendary colony lost in the jungle of Venus.",
+          "portrait": "",
+          "x": 2309,
+          "y": 1927,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_3fc20a",
+          "type": "Landing Zone",
+          "name": "Headlands",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Keep watch in the Ishtar Sink to aid the City in its efforts.",
+          "portrait": "",
+          "x": 2117,
+          "y": 1588,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_09494b",
+          "type": "Strike",
+          "name": "The Nexus",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Golden Age legends tell of ancient tunnels below the Academy, where a Vex machine once ate away at the planet. Descend into the old dig sites and find this Nexus before it churns again.",
+          "portrait": "",
+          "x": 2638,
+          "y": 1633,
+          "size": 96,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": [
+            "The Nexus"
+          ]
+        },
+        {
+          "id": "node_9b0b87",
+          "type": "Story",
+          "name": "Eye of a Gate Lord",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Lure out the Vex Gate Lord that protects the Endless Steps and bring its head back io the Awoken.",
+          "portrait": "",
+          "x": 3208,
+          "y": 1616,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_1a3d5b",
+          "type": "Story",
+          "name": "Wolves' Gambit",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Track Skolas and his crew of Wolves along the Ishtar Cliffs.",
+          "portrait": "",
+          "x": 3025,
+          "y": 1469,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_7b8bc1",
+          "type": "Strike",
+          "name": "Echo Chamber",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Guardians destroyed the Nexus on Venus. Now, a powerful Vex mind seeks to sunder time and space and undo what was done.",
+          "portrait": "",
+          "x": 2901,
+          "y": 1337,
+          "size": 96,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_f0fd99",
+          "type": "Story",
+          "name": "Queen's Ransom",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Follow Skolas into Vex territory to aid in his capture for the Queen.",
+          "portrait": "",
+          "x": 3028,
+          "y": 753,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen",
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_ba6314",
+          "type": "Story",
+          "name": "A Kell Rising",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Head off the House of Wolves on Venus before their Kell, Skolas, can wrest control of the House of Winter.",
+          "portrait": "",
+          "x": 2675,
+          "y": 942,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2a39b8",
+          "type": "Story",
+          "name": "Scourge of Winter",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Hunt and kill Draksis, the House of Winter's Kell, hiding deep in the caves of the Ishtar Sink.",
+          "portrait": "",
+          "x": 2385,
+          "y": 844,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_24652b",
+          "type": "Story",
+          "name": "Entropy's Pinnacle",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Scale the Vex Citadel and hunt down the source of Venus's blight.",
+          "portrait": "",
+          "x": 1811,
+          "y": 845,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_b5d0cd",
+          "type": "Strike",
+          "name": "Winter's Run",
+          "subtitle": "",
+          "subtext": "",
+          "description": "As the Vex march to claim the Ishtar Sink, the Fallen House of Winter is raising a powerful Archon, stolen from the Prison of Elders in the Reef. Find the Archon before they fully restore his soul.",
+          "portrait": "",
+          "x": 1877,
+          "y": 574,
+          "size": 96,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "labels": [
+        {
+          "id": "lbl_20e59b",
+          "text": "Ishtar Sink",
+          "x": 1556,
+          "y": 1331,
+          "boxed": true
+        },
+        {
+          "id": "lbl_b8e862",
+          "text": "The Cinders",
+          "x": 2116,
+          "y": 653,
+          "boxed": false
+        },
+        {
+          "id": "lbl_a16376",
+          "text": "Winter's Lair",
+          "x": 2496,
+          "y": 1027,
+          "boxed": false
+        },
+        {
+          "id": "lbl_554efa",
+          "text": "Ember Caves",
+          "x": 2380,
+          "y": 1362,
+          "boxed": false
+        },
+        {
+          "id": "lbl_a914f2",
+          "text": "Headlands",
+          "x": 1834,
+          "y": 1781,
+          "boxed": false
+        },
+        {
+          "id": "lbl_529887",
+          "text": "Ishtar Academy",
+          "x": 2378,
+          "y": 1817,
+          "boxed": false
+        },
+        {
+          "id": "lbl_ab83e0",
+          "text": "The Terminus",
+          "x": 2826,
+          "y": 1234,
+          "boxed": false
+        },
+        {
+          "id": "lbl_f6a9a8",
+          "text": "Endless Steps",
+          "x": 3162,
+          "y": 1447,
+          "boxed": false
+        },
+        {
+          "id": "lbl_c33b0d",
+          "text": "The Citadel",
+          "x": 2782,
+          "y": 1453,
+          "boxed": false
+        },
+        {
+          "id": "lbl_66c1b0",
+          "text": "Waking Ruins",
+          "x": 2657,
+          "y": 1984,
+          "boxed": false
+        },
+        {
+          "id": "lbl_f30aa2",
+          "text": "The Shattered Coast",
+          "x": 2216,
+          "y": 2091,
+          "boxed": false
+        }
+      ],
       "director": {
         "bodyKey": "venus",
         "orbital": false,
@@ -1768,7 +3647,8 @@
         "orbital": true,
         "stackOrder": 0,
         "nodeType": "Moon"
-      }
+      },
+      "labels": []
     },
     {
       "id": "loc_1526d8",
@@ -1779,18 +3659,440 @@
         "width": 0,
         "height": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "id": "node_079d7b",
+          "type": "Raid",
+          "name": "Vow of the Disciple",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The disciple beckons...",
+          "portrait": "",
+          "x": 1332,
+          "y": 708,
+          "size": 128,
+          "enabled": true,
+          "enemies": [
+            "Scorn"
+          ],
+          "bosses": [
+            "Gatekeeper",
+            "Rhulk"
+          ]
+        },
+        {
+          "id": "node_6588ed",
+          "type": "Dungeon",
+          "name": "Sundered Doctrine",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Power lies in the deepest vault.",
+          "portrait": "",
+          "x": 1582,
+          "y": 574,
+          "size": 64,
+          "enabled": true,
+          "enemies": [
+            "Scorn"
+          ],
+          "bosses": [
+            "Hefn"
+          ]
+        },
+        {
+          "id": "node_7bdf76",
+          "type": "Strike",
+          "name": "Birthplace of the Vile",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Aided by the Witness, the Scorn have gained the power to break into the Throne World through areas the Light cannot touch.",
+          "portrait": "",
+          "x": 1801,
+          "y": 924,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_de12ed",
+          "type": "Challenge",
+          "name": "Catalyst",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Witness the memory linked to the Enigma. The entry point is located deep within the Temple of the Wrathful.",
+          "portrait": "",
+          "x": 1517,
+          "y": 1308,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d83364",
+          "type": "Lost Sector",
+          "name": "Metamorphosis",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2040,
+          "y": 1298,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_a87e25",
+          "type": "Strike",
+          "name": "The Lightblade",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Recover an artifact from a monument to Oryx, located deep in the swamps of Savathûn's throne world.",
+          "portrait": "",
+          "x": 2596,
+          "y": 1254,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c01c95",
+          "type": "Challenge",
+          "name": "The Wellspring",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2939,
+          "y": 1442,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_6ed21a",
+          "type": "Challenge",
+          "name": "Insight",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Revisit the memory linked to the Tablet of Ruin. The entry is located deep within the Sepulcher Lost Sector.",
+          "portrait": "",
+          "x": 2346,
+          "y": 1708,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_5865ad",
+          "type": "Lost Sector",
+          "name": "Sepulcher",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2579,
+          "y": 1645,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e7b9d9",
+          "type": "Lost Sector",
+          "name": "Extraction",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2108,
+          "y": 1793,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_864636",
+          "type": "Vendor",
+          "name": "Fynch",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A Hive Ghost who no longer believes the Hive deserve the Light, Fynch has defected from Savathûn's followers in order to help humanity.",
+          "portrait": "",
+          "x": 1802,
+          "y": 1967,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_198c72",
+          "type": "Landing Zone",
+          "name": "Quagmire",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Travel to the Quagmire.",
+          "portrait": "",
+          "x": 1761,
+          "y": 1932,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1c3d2d",
+          "type": "Dungeon",
+          "name": "Spire of the Watcher",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Machinations run wild in this dust-ridden ruin. Bring them to heel.",
+          "portrait": "",
+          "x": 1421,
+          "y": 1656,
+          "size": 64,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_98f7f9",
+          "type": "Location",
+          "name": "The Enclave",
+          "subtitle": "",
+          "subtext": "",
+          "description": "The Hidden's base of operations on Mars.",
+          "portrait": "",
+          "x": 1227,
+          "y": 1771,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_d06f34",
+          "type": "Challenge",
+          "name": "Preservation",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Enter the Throne World Pyramid and prevent the Scorn from reclaiming its power.",
+          "portrait": "",
+          "x": 1365,
+          "y": 951,
+          "size": 64,
+          "enabled": true,
+          "enemies": [
+            "Scorn"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_7c1711",
+          "type": "Story",
+          "name": "Normal",
+          "subtitle": "",
+          "subtext": "",
+          "description": "This is the Normal Destiny campaign, enjoyed alone or with a fireteam.",
+          "portrait": "",
+          "x": 1990,
+          "y": 2270,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_014511",
+          "type": "Story",
+          "name": "Legendary",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Rise to a higher level of challenge.\n\nYou will face harder missions and stronger combatants. Recommended for experienced players with a broad arsenal to draw upon.",
+          "portrait": "",
+          "x": 2113,
+          "y": 2269,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_5d1d79",
+          "type": "Story",
+          "name": "Weekly Mission",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Track Savathûn on Mars, where temporal abnormalities scar the planet's surface and the Cabal seek to claim new territory.",
+          "portrait": "",
+          "x": 2060,
+          "y": 2387,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_32abe3",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2700,
+          "y": 1645,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_cd6061",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2020,
+          "y": 1116,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_39ea9d",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1975,
+          "y": 1963,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
       "director": {
         "bodyKey": "mars",
         "orbital": false,
         "stackOrder": 1,
         "nodeType": "Location"
-      }
+      },
+      "labels": [
+        {
+          "id": "lbl_e043f3",
+          "text": "Disciple's Bog",
+          "x": 943,
+          "y": 590,
+          "boxed": false
+        },
+        {
+          "id": "lbl_089aac",
+          "text": "Miasma",
+          "x": 1970,
+          "y": 1199,
+          "boxed": false
+        },
+        {
+          "id": "lbl_9af420",
+          "text": "Queen's Bailey",
+          "x": 2726,
+          "y": 1171,
+          "boxed": false
+        },
+        {
+          "id": "lbl_cd9e43",
+          "text": "Temple of the Navigator",
+          "x": 2462,
+          "y": 770,
+          "boxed": false
+        },
+        {
+          "id": "lbl_def2e5",
+          "text": "Quagmire",
+          "x": 1943,
+          "y": 1852,
+          "boxed": false
+        },
+        {
+          "id": "lbl_d1b03b",
+          "text": "Florescent Canal",
+          "x": 2539,
+          "y": 1678,
+          "boxed": false
+        },
+        {
+          "id": "lbl_df9ca7",
+          "text": "Court of Thorns",
+          "x": 2911,
+          "y": 1590,
+          "boxed": false
+        },
+        {
+          "id": "lbl_05f6e4",
+          "text": "Sanctum of the Brood Queen",
+          "x": 3333,
+          "y": 1643,
+          "boxed": false
+        },
+        {
+          "id": "lbl_4e6893",
+          "text": "Savathûn's Throne World",
+          "x": 1952,
+          "y": 2169,
+          "boxed": true
+        },
+        {
+          "id": "lbl_34fb7a",
+          "text": "Alluring Curtain",
+          "x": 2628,
+          "y": 2115,
+          "boxed": false
+        },
+        {
+          "id": "lbl_04d28a",
+          "text": "Apothecary",
+          "x": 2884,
+          "y": 2334,
+          "boxed": false
+        },
+        {
+          "id": "lbl_5c858a",
+          "text": "The Enclave",
+          "x": 1225,
+          "y": 1927,
+          "boxed": false
+        },
+        {
+          "id": "lbl_ede007",
+          "text": "Replayable Missions",
+          "x": 1975,
+          "y": 2223,
+          "boxed": false
+        }
+      ]
     },
     {
       "id": "loc_4c9e12",
       "name": "The Last City",
-      "subtitle": "",
+      "subtitle": "H.E.L.M.",
       "map": {
         "image": "assets\\maps\\7835C280.png",
         "width": 0,
@@ -1800,7 +4102,7 @@
       "director": {
         "bodyKey": "earth",
         "orbital": false,
-        "stackOrder": -2,
+        "stackOrder": 5,
         "nodeType": "Location"
       },
       "labels": []
@@ -1820,12 +4122,13 @@
         "orbital": true,
         "stackOrder": -1,
         "nodeType": "Moon"
-      }
+      },
+      "labels": []
     },
     {
       "id": "loc_aad29a",
       "name": "Keplar",
-      "subtitle": "",
+      "subtitle": "The Edge of Fate",
       "map": {
         "image": "assets\\maps\\3240C280.png",
         "width": 0,
@@ -1859,20 +4162,147 @@
     },
     {
       "id": "loc_9c3bae",
-      "name": "Mars Moins",
-      "subtitle": "",
+      "name": "Hellas Basin",
+      "subtitle": "BrayTech Futurescape",
       "map": {
         "image": "assets\\maps\\5A34C280.png",
         "width": 0,
         "height": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "id": "node_afa899",
+          "type": "Vendor",
+          "name": "Ana Bray",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1345,
+          "y": 1613,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2103a5",
+          "type": "Landing Zone",
+          "name": "Braytech Futurescape",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1325,
+          "y": 1761,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e4c7be",
+          "type": "Landing Zone",
+          "name": "Glacial Drift",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1369,
+          "y": 2212,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_27356c",
+          "type": "Other events",
+          "name": "Extinction Protocol",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1142,
+          "y": 2005,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_fde20d",
+          "type": "Other events",
+          "name": "Extinction Protocol",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1490,
+          "y": 1640,
+          "size": 64,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
       "director": {
         "bodyKey": "mars",
         "orbital": false,
-        "stackOrder": 3,
+        "stackOrder": 0,
         "nodeType": "Location"
-      }
+      },
+      "labels": [
+        {
+          "id": "lbl_361e2d",
+          "text": "Aurora Breach",
+          "x": 1241,
+          "y": 1493,
+          "boxed": false
+        },
+        {
+          "id": "lbl_3c6da9",
+          "text": "Braytech Futurescape",
+          "x": 1221,
+          "y": 1683,
+          "boxed": false
+        },
+        {
+          "id": "lbl_c23e53",
+          "text": "Glacial Drift",
+          "x": 1255,
+          "y": 2134,
+          "boxed": false
+        },
+        {
+          "id": "lbl_ca503c",
+          "text": "Hellas Basin",
+          "x": 1761,
+          "y": 2061,
+          "boxed": true
+        },
+        {
+          "id": "lbl_e2c734",
+          "text": "Hellas View",
+          "x": 737,
+          "y": 1615,
+          "boxed": false
+        },
+        {
+          "id": "lbl_598daa",
+          "text": "Alton Dynamo",
+          "x": 780,
+          "y": 1691,
+          "boxed": false
+        },
+        {
+          "id": "lbl_756d1d",
+          "text": "Dynamo Approach",
+          "x": 705,
+          "y": 1999,
+          "boxed": false
+        }
+      ]
     },
     {
       "id": "loc_6a45b3",
@@ -2035,146 +4465,9 @@
       "labels": []
     },
     {
-      "id": "loc_a25ffe",
-      "name": "The Red War",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 3000,
-        "height": 2000
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "earth",
-        "orbital": false,
-        "stackOrder": -5,
-        "nodeType": "Activity"
-      }
-    },
-    {
-      "id": "loc_c10bdc",
-      "name": "Curse of Osiris",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "mercury",
-        "orbital": false,
-        "stackOrder": -5,
-        "nodeType": "Activity"
-      },
-      "labels": []
-    },
-    {
-      "id": "loc_3e2aa8",
-      "name": "Warmind",
-      "subtitle": "",
-      "map": {
-        "image": "",
-        "width": 3000,
-        "height": 2000
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "mars",
-        "orbital": false,
-        "stackOrder": -5,
-        "nodeType": "Activity"
-      }
-    },
-    {
-      "id": "loc_6665c7",
-      "name": "Forsaken",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 3000,
-        "height": 2000
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "body_9d32",
-        "orbital": false,
-        "stackOrder": -5,
-        "nodeType": "Activity"
-      }
-    },
-    {
-      "id": "loc_f75ae1",
-      "name": "Shadowkeep",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "earth",
-        "orbital": true,
-        "stackOrder": -1,
-        "nodeType": "Location"
-      }
-    },
-    {
-      "id": "loc_20de6f",
-      "name": "Beyond Light",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "jupiter",
-        "orbital": true,
-        "stackOrder": -1,
-        "nodeType": "Activity"
-      }
-    },
-    {
-      "id": "loc_c0cc81",
-      "name": "The Witch Queen",
-      "subtitle": "",
-      "map": {
-        "image": "",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "mars",
-        "orbital": false,
-        "stackOrder": 0,
-        "nodeType": "Activity"
-      }
-    },
-    {
-      "id": "loc_644c95",
-      "name": "Lightfall",
-      "subtitle": "",
-      "map": {
-        "image": "assets\\bg\\4838C280.png",
-        "width": 0,
-        "height": 0
-      },
-      "nodes": [],
-      "director": {
-        "bodyKey": "neptune",
-        "orbital": false,
-        "stackOrder": -1,
-        "nodeType": "Activity"
-      }
-    },
-    {
       "id": "loc_af8ae4",
       "name": "The Lawless Frontier",
-      "subtitle": "",
+      "subtitle": "Renegades",
       "map": {
         "image": "",
         "width": 0,
@@ -2186,6 +4479,1047 @@
         "orbital": true,
         "stackOrder": 0,
         "nodeType": "Location"
+      }
+    },
+    {
+      "id": "loc_fe90e5",
+      "name": "Meridian Bay",
+      "subtitle": "Legacy",
+      "map": {
+        "image": "assets\\maps\\old\\MARS_PHOBOS.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [
+        {
+          "id": "node_40c619",
+          "type": "Story",
+          "name": "The Buried City",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Clear out the Cabal occupying the lost city of Freehold and explore what remains.",
+          "portrait": "",
+          "x": 3295,
+          "y": 2080,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_70e2dc",
+          "type": "Strike",
+          "name": "Dust Palace",
+          "subtitle": "",
+          "subtext": "",
+          "description": "A new Cabal force has unleashed powerful Psion Flayers to seize control of the old Martian Warmind. Face this new threat and secure what remains of the ancient network.",
+          "portrait": "",
+          "x": 3498,
+          "y": 1841,
+          "size": 128,
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": []
+        },
+        {
+          "id": "node_2c7920",
+          "type": "Story",
+          "name": "Download Complete",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Open the forgotten archives at Clovis Bray, and search for a way to defend against SIVA.",
+          "portrait": "",
+          "x": 3405,
+          "y": 1735,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4d90b4",
+          "type": "Story",
+          "name": "Fear's Embrace",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Return to the base on Phobos. Destroy the blighted source on Mars.",
+          "portrait": "",
+          "x": 3682,
+          "y": 1204,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7f3e96",
+          "type": "Story",
+          "name": "The Coming War",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Travel to Phobos and investigate the Cabal distress signal.",
+          "portrait": "",
+          "x": 3742,
+          "y": 1032,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_502ca8",
+          "type": "Landing Zone",
+          "name": "The Barrens",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Fight through the shifting Martian dunes to protect the City's interests.",
+          "portrait": "",
+          "x": 3092,
+          "y": 1208,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_0e6e04",
+          "type": "Story",
+          "name": "A Rising Tide",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Find and destroy the source of the Vex surging to protect the Black Garden.",
+          "portrait": "",
+          "x": 2755,
+          "y": 1836,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_368ad4",
+          "type": "Story",
+          "name": "Tenebrous Tunnels",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Seek out the source of the Taken blight on Mars.",
+          "portrait": "",
+          "x": 2141,
+          "y": 1573,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_bfd097",
+          "type": "Story",
+          "name": "A New Den",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Track the House of Wolves across the surface of Mars.",
+          "portrait": "",
+          "x": 1877,
+          "y": 1557,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_bdf08e",
+          "type": "Story",
+          "name": "The Prime's Path",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Hunt the Prime Servitor that has brought together the broken House of Wolves.",
+          "portrait": "",
+          "x": 2039,
+          "y": 1358,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_aa69cd",
+          "type": "Story",
+          "name": "Exclusion Zone",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Survive the military power of the Cabal and find the Gate to the Black Garden.",
+          "portrait": "",
+          "x": 1578,
+          "y": 1374,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4c3ada",
+          "type": "Strike",
+          "name": "The Undying Mind",
+          "subtitle": "",
+          "subtext": "",
+          "description": "An ancient Mind, feared by the Vex themselves, hides among the channels of the Black Garden. Find this machine and end its existance.",
+          "portrait": "",
+          "x": 1349,
+          "y": 1286,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3ea90f",
+          "type": "Story",
+          "name": "The Black Garden",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Fight through the Gate and enter the Black Garden to destroy its heart.",
+          "portrait": "",
+          "x": 1489,
+          "y": 1137,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3618e4",
+          "type": "Story",
+          "name": "The Garden's Spire",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Seize control of the Black Garden Spire held behind the wall of the Cabal Warbase and wake the Gate Lord's Eye.",
+          "portrait": "",
+          "x": 2055,
+          "y": 922,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_96328b",
+          "type": "Strike",
+          "name": "Cerberus Vae III",
+          "subtitle": "",
+          "subtext": "",
+          "description": "Just beyond their warbase, Valus Ta'aurc, Fleet Commander of the Cabal Siege Dancers, hides in a Imperial Land Tank. Fight through his guard and stop this terror before he destroys all of Freehold.",
+          "portrait": "",
+          "x": 1464,
+          "y": 711,
+          "size": 128,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "director": {
+        "bodyKey": "mars",
+        "orbital": false,
+        "stackOrder": 3,
+        "nodeType": "Location"
+      },
+      "labels": [
+        {
+          "id": "lbl_0d7aa3",
+          "text": "Valley of the Kings",
+          "x": 1326,
+          "y": 938,
+          "boxed": false
+        },
+        {
+          "id": "lbl_e81a5b",
+          "text": "Meridian Bay",
+          "x": 1030,
+          "y": 1523,
+          "boxed": true
+        },
+        {
+          "id": "lbl_1cf521",
+          "text": "Iron Line",
+          "x": 2144,
+          "y": 1093,
+          "boxed": false
+        },
+        {
+          "id": "lbl_2d982d",
+          "text": "Scablands",
+          "x": 2335,
+          "y": 1456,
+          "boxed": false
+        },
+        {
+          "id": "lbl_6a05d7",
+          "text": "Legion's Keep",
+          "x": 2480,
+          "y": 933,
+          "boxed": false
+        },
+        {
+          "id": "lbl_3ba3b3",
+          "text": "The Wastes",
+          "x": 3013,
+          "y": 814,
+          "boxed": false
+        },
+        {
+          "id": "lbl_4f6ef7",
+          "text": "Rubicon",
+          "x": 3031,
+          "y": 1022,
+          "boxed": false
+        },
+        {
+          "id": "lbl_b3cada",
+          "text": "The Barrens",
+          "x": 2841,
+          "y": 1307,
+          "boxed": false
+        },
+        {
+          "id": "lbl_5a47c0",
+          "text": "Tharsis Junction",
+          "x": 2670,
+          "y": 2064,
+          "boxed": false
+        },
+        {
+          "id": "lbl_f7b0f2",
+          "text": "Freehold Station",
+          "x": 2667,
+          "y": 1779,
+          "boxed": false
+        },
+        {
+          "id": "lbl_bb5f42",
+          "text": "Buried City",
+          "x": 2897,
+          "y": 1967,
+          "boxed": false
+        },
+        {
+          "id": "lbl_1ec356",
+          "text": "Dust Palace",
+          "x": 3147,
+          "y": 2148,
+          "boxed": false
+        },
+        {
+          "id": "lbl_aad8da",
+          "text": "The Hollows",
+          "x": 3277,
+          "y": 1825,
+          "boxed": false
+        },
+        {
+          "id": "lbl_b3b336",
+          "text": "Phobos",
+          "x": 3760,
+          "y": 1357,
+          "boxed": true
+        }
+      ]
+    },
+    {
+      "id": "loc_f7ca2e",
+      "name": "Arcadian Valley",
+      "subtitle": "",
+      "map": {
+        "image": "assets\\maps\\B735C280.png",
+        "width": 0,
+        "height": 0
+      },
+      "nodes": [
+        {
+          "id": "node_f09758",
+          "type": "Lost Sector",
+          "name": "Ancient's Haunt",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 827,
+          "y": 562,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": [
+            "Pakrion"
+          ]
+        },
+        {
+          "id": "node_32c334",
+          "type": "Adventure",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1887,
+          "y": 1180,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e30e62",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 881,
+          "y": 498,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_048411",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1005,
+          "y": 541,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_4ddbc9",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 924,
+          "y": 663,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_f9bdfa",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 680,
+          "y": 918,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c9b1be",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 877,
+          "y": 1021,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_3a4e7b",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1658,
+          "y": 1268,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_10c428",
+          "type": "Lost Sector",
+          "name": "Carrion Pit",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1693,
+          "y": 1374,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Nariks Reborn"
+          ]
+        },
+        {
+          "id": "node_fec8b3",
+          "type": "Lost Sector",
+          "name": "Conflux",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 758,
+          "y": 1054,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Cabal"
+          ],
+          "bosses": [
+            "Shayotet Partisan"
+          ]
+        },
+        {
+          "id": "node_c1a054",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1114,
+          "y": 1108,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c0bd23",
+          "type": "Landing Zone",
+          "name": "The Cistern",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1237,
+          "y": 1389,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_889637",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1742,
+          "y": 1406,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_f4091b",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1856,
+          "y": 1463,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2bde1c",
+          "type": "Adventure",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 959,
+          "y": 1038,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7448c3",
+          "type": "Adventure",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1391,
+          "y": 825,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_6c1386",
+          "type": "Adventure",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 983,
+          "y": 600,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_bbe9a5",
+          "type": "Adventure",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1716,
+          "y": 910,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_88e6da",
+          "type": "Landing Zone",
+          "name": "Artifact's Edge",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1352,
+          "y": 850,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_2a7754",
+          "type": "Landing Zone",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1589,
+          "y": 470,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c05a26",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1436,
+          "y": 496,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e256bc",
+          "type": "Public Event",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1454,
+          "y": 851,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_05d4e4",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1456,
+          "y": 886,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_ba8384",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1332,
+          "y": 771,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_1db853",
+          "type": "Lost Sector",
+          "name": "Orrery",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1407,
+          "y": 769,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Vex"
+          ],
+          "bosses": [
+            "Thyrdron"
+          ]
+        },
+        {
+          "id": "node_d6e981",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1705,
+          "y": 829,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c440df",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1698,
+          "y": 734,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_9e2085",
+          "type": "Lost Sector",
+          "name": "Rift",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1851,
+          "y": 1051,
+          "size": 22,
+          "enabled": true,
+          "enemies": [
+            "Fallen"
+          ],
+          "bosses": [
+            "Tattered Dusk Captain"
+          ]
+        },
+        {
+          "id": "node_866ea7",
+          "type": "Landing Zone",
+          "name": "Exodus Black",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1981,
+          "y": 1106,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_7546ca",
+          "type": "Vendor",
+          "name": "Exodus AI",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1940,
+          "y": 896,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_15755f",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1996,
+          "y": 1036,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_e2d9c1",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1990,
+          "y": 948,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_5759d3",
+          "type": "Other events",
+          "name": "Golden Chest",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 2057,
+          "y": 1070,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_87b079",
+          "type": "Other events",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1326,
+          "y": 509,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_c868d3",
+          "type": "Other events",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1489,
+          "y": 508,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        },
+        {
+          "id": "node_400a10",
+          "type": "Other events",
+          "name": "New Node",
+          "subtitle": "",
+          "subtext": "",
+          "description": "",
+          "portrait": "",
+          "x": 1510,
+          "y": 534,
+          "size": 22,
+          "enabled": true,
+          "enemies": [],
+          "bosses": []
+        }
+      ],
+      "director": {
+        "bodyKey": "body_fd9c",
+        "orbital": false,
+        "stackOrder": 0,
+        "nodeType": "Location"
+      },
+      "labels": [
+        {
+          "id": "lbl_ca74f3",
+          "text": "The Tangle",
+          "x": 897,
+          "y": 562,
+          "boxed": false
+        },
+        {
+          "id": "lbl_8888cc",
+          "text": "Well of Dust",
+          "x": 718,
+          "y": 745,
+          "boxed": false
+        },
+        {
+          "id": "lbl_51346c",
+          "text": "Virgo Conduit",
+          "x": 864,
+          "y": 795,
+          "boxed": false
+        },
+        {
+          "id": "lbl_776a4c",
+          "text": "The Cistern",
+          "x": 792,
+          "y": 1160,
+          "boxed": false
+        },
+        {
+          "id": "lbl_0dbdc7",
+          "text": "Well of Flame",
+          "x": 653,
+          "y": 1271,
+          "boxed": false
+        },
+        {
+          "id": "lbl_b0d30f",
+          "text": "Pools of Luminance",
+          "x": 959,
+          "y": 1214,
+          "boxed": false
+        },
+        {
+          "id": "lbl_ad6e1d",
+          "text": "The Anchor",
+          "x": 349,
+          "y": 1439,
+          "boxed": false
+        },
+        {
+          "id": "lbl_7e3564",
+          "text": "Glade of Echoes",
+          "x": 1635,
+          "y": 1435,
+          "boxed": false
+        },
+        {
+          "id": "lbl_87d194",
+          "text": "Artifact's Edge",
+          "x": 1300,
+          "y": 797,
+          "boxed": false
+        },
+        {
+          "id": "lbl_f96040",
+          "text": "Hallows",
+          "x": 1650,
+          "y": 857,
+          "boxed": false
+        },
+        {
+          "id": "lbl_cd6197",
+          "text": "Sunken Cavern",
+          "x": 1574,
+          "y": 967,
+          "boxed": false
+        },
+        {
+          "id": "lbl_d518cf",
+          "text": "Exodus Black",
+          "x": 1898,
+          "y": 997,
+          "boxed": false
+        },
+        {
+          "id": "lbl_8f0b84",
+          "text": "Chamber of Sky",
+          "x": 2047,
+          "y": 1040,
+          "boxed": false
+        },
+        {
+          "id": "lbl_d678fe",
+          "text": "Well of Stars",
+          "x": 2127,
+          "y": 957,
+          "boxed": false
+        }
+      ]
+    },
+    {
+      "id": "loc_1bb6b0",
+      "name": "New Location",
+      "subtitle": "",
+      "map": {
+        "image": "",
+        "width": 3000,
+        "height": 2000
+      },
+      "nodes": [],
+      "director": {
+        "bodyKey": "",
+        "orbital": false,
+        "stackOrder": 0
       }
     }
   ]
