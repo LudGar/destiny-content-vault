@@ -1,4 +1,4 @@
-# Destiny Universe Director
+# Destiny Community Vault
 
 A web-based **Destiny-style Director & Location Map** built for archiving, visualizing, and exploring a fictional or canonical game universe.
 
