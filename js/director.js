@@ -37,6 +37,28 @@ function addLine(svg, x1, y1, x2, y2, alpha = 0.14) {
   return ln;
 }
 
+function addOrbit(svg, cx, cy, r, opts = {}) {
+  const {
+    color = "#78BEFF",
+    alpha = 0.12,
+    width = 1,
+    dash = "4 7"
+  } = opts;
+
+  const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  c.setAttribute("cx", String(cx));
+  c.setAttribute("cy", String(cy));
+  c.setAttribute("r", String(Math.max(1, Math.round(r))));
+  c.setAttribute("fill", "none");
+  c.setAttribute("stroke", color);
+  c.setAttribute("stroke-opacity", String(alpha));
+  c.setAttribute("stroke-width", String(width));
+  c.setAttribute("stroke-dasharray", dash);
+  c.setAttribute("vector-effect", "non-scaling-stroke");
+  svg.appendChild(c);
+  return c;
+}
+
 function normalizeIconUrl(v) {
   if (typeof v === "string") {
     const t = v.trim();
@@ -69,15 +91,10 @@ function hexToRgb(hex) {
   return { r: 120, g: 190, b: 255 }; // fallback #78BEFF
 }
 
-
 // Cache: url|size|tint -> dataURL (or null)
 const __BLUE_TINT_CACHE__ = new Map();
 
-/**
- * Takes source PNG, uses its BLUE channel as ALPHA, and paints RGB = tint color.
- * Output pixel: (tintR, tintG, tintB, alpha=sourceBlue)
- * Returns dataURL or null if it fails (404/CORS/tainted canvas).
- */
+
 async function blueToAlphaTintDataUrl(url, size, tintHex) {
   const key = `${url}|${size}|${tintHex}`;
   if (__BLUE_TINT_CACHE__.has(key)) return __BLUE_TINT_CACHE__.get(key);
@@ -212,6 +229,57 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
     midLine.style.left = `${left}px`;
     midLine.style.width = `${span}px`;
   }
+    
+  // --- Sun-centered dashed orbit rings (Destiny-ish layered look) ---
+  const sunPos = pos.get("sun");
+  if (sunPos) {
+    primaries.forEach((b) => {
+      if (!b || b.key === "sun") return;
+
+      const bp = pos.get(b.key);
+      if (!bp) return;
+
+      const r = Math.abs(bp.x - sunPos.x);
+      if (r < 8) return;
+
+      const orbitColor =
+        (typeof b.color === "string" && b.color.trim())
+          ? b.color.trim()
+          : "#78BEFF";
+
+      // 1) faint continuous base ring
+      addOrbit(svg, sunPos.x, sunPos.y, r, {
+        color: orbitColor,
+        alpha: 0.06,
+        width: 1,
+        dash: "" // no dash => solid
+      });
+
+      // 2) primary dashed ring (the "director" feel)
+      addOrbit(svg, sunPos.x, sunPos.y, r, {
+        color: orbitColor,
+        alpha: 0.12,
+        width: 1,
+        dash: "6 10"
+      });
+
+      // 3) slight offset twin ring (gives depth)
+      addOrbit(svg, sunPos.x, sunPos.y, r + 2, {
+        color: "#ffffff",
+        alpha: 0.04,
+        width: 1,
+        dash: "2 14"
+      });
+
+      // 4) tiny inner accent (very subtle)
+      addOrbit(svg, sunPos.x, sunPos.y, Math.max(1, r - 2), {
+        color: orbitColor,
+        alpha: 0.05,
+        width: 1,
+        dash: "1 16"
+      });
+    });
+  }
 
   // --- Moons stack above parent ---
   const moonsByParent = new Map();
@@ -235,8 +303,16 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
 
       // Register moon position so locations can be attached to moons too.
       pos.set(m.key, { x, y, size, kind: "moon" });
-
+      const mColor = (typeof m.color === "string" && m.color.trim()) ? m.color.trim() : "#78BEFF";
+      
       addLine(svg, x, y + size * 0.15, parent.x, midY - parent.size * 0.15, 0.14);
+      
+      addOrbit(svg, x, y, Math.round(size * 0.9), {
+        color: mColor,
+        alpha: 0.14,
+        width: 1,
+        dash: "2 4"
+      });
 
       const node = makeBodyNodeSync({ stageEl, universe, body: m, x, y, size, glyph: bodyGlyph("moon") });
       stageEl.appendChild(node.el);
@@ -249,6 +325,59 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
   // Locations inherit their dot color/icon from a per-location nodeType.
   // We support both primaries and moons as attach points.
   const allBodies = [...primaries, ...moons];
+
+  function makeDirectorLabel({
+    x, y,
+    text,
+    subtitle = "",
+    opts = {}
+  }) {
+    const {
+      boxed = false,
+      uppercase = true,
+      size = "normal",        // "small" | "normal" | "big"
+      muted = false,
+      glow = false,
+      align = "center",       // "center" | "left" | "right"
+      wrap = false,
+      maxWidth = 260,
+      opacity = null,         // number or null
+      offsetX = 0,
+      offsetY = 0,
+    } = opts;
+
+    const el = document.createElement("div");
+    el.className = "dirLabel";
+
+    if (uppercase) el.classList.add("upper");
+    if (boxed) el.classList.add("boxed");
+    if (muted) el.classList.add("muted");
+    if (glow) el.classList.add("glow");
+    if (wrap) el.classList.add("wrap");
+    if (size === "small") el.classList.add("small");
+    if (size === "big") el.classList.add("big");
+    if (align === "left") el.classList.add("left");
+    if (align === "right") el.classList.add("right");
+
+    el.style.left = `${Math.round(x + offsetX)}px`;
+    el.style.top  = `${Math.round(y + offsetY)}px`;
+
+    if (wrap) el.style.maxWidth = `${maxWidth}px`;
+    if (typeof opacity === "number") el.style.opacity = String(opacity);
+
+    const main = document.createElement("div");
+    main.textContent = text || "";
+    el.appendChild(main);
+
+    if (subtitle) {
+      const sub = document.createElement("div");
+      sub.className = "dirLabel sub";
+      sub.textContent = subtitle;
+      el.appendChild(sub);
+    }
+
+    return el;
+  }
 
   function getLocNodeType(loc, fallback) {
     const d = loc?.director || {};
@@ -419,19 +548,27 @@ export function renderDirector({ stageEl, universe, getTheme, setRoute, setSelec
     });
     node.addEventListener("mouseleave", hideTooltip);
 
-    const labelEl = document.createElement("div");
-    labelEl.style.position = "absolute";
-    labelEl.style.left = `${x}px`;
-    labelEl.style.top = `${y + size * 0.65 + 10}px`;
-    labelEl.style.transform = "translateX(-50%)";
-    labelEl.style.fontFamily = "var(--mono)";
-    labelEl.style.fontSize = "11px";
-    labelEl.style.letterSpacing = ".08em";
-    labelEl.style.color = "rgba(255,255,255,.65)";
-    labelEl.style.zIndex = "9";
-    labelEl.textContent = (body.label || body.key).toUpperCase();
+    const labelEl = makeDirectorLabel({
+      x,
+      y: y + size * 0.65 + 10,
+      text: (body.label || body.key),
+      subtitle: body.subtitle || "",
+      opts: {
+        boxed: !!body.labelBoxed,     // new optional field
+        uppercase: body.labelUpper !== false,
+        size: body.labelSize || "normal", // "small"|"normal"|"big"
+        muted: body.labelMuted === true,
+        glow: body.labelGlow === true,
+        wrap: body.labelWrap === true,
+        maxWidth: Number(body.labelMaxWidth ?? 260),
+        align: body.labelAlign || "center", // "center"|"left"|"right"
+        offsetX: Number(body.labelOffsetX ?? 0),
+        offsetY: Number(body.labelOffsetY ?? 0),
+      }
+    });
 
     return { el: node, labelEl };
+
   }
 
   async function hydrateBodyIcon(nodeEl, body, size) {
