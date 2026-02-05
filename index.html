@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Destiny Community Vault</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Destiny Director Prototype</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -18,7 +17,8 @@
       <div class="crumbs" id="crumbs"></div>
 
       <div class="topbarRight">
-</div>
+        <button class="btn ghost" id="toggleEditorBtn" title="Toggle editor (if present)">Editor</button>
+      </div>
     </header>
 
     <main class="main">
@@ -30,9 +30,12 @@
 
   <script type="module" src="./app.js"></script>
 
+  <!-- Optional editor: safe-load (won't break if missing) -->
   <script>
     const s = document.createElement("script");
     s.type = "module";
+    s.src = "./js/editor.js";
+    s.onerror = () => console.log("[Editor] editor.js not found (read-only mode).");
     document.head.appendChild(s);
   </script>
 </body>
